@@ -32,7 +32,7 @@
                 <span class="text-sky-400">Us</span>
             </h1>
             <p class="text-sky-100 text-xl font-light leading-relaxed drop-shadow-md">
-                Whether you want to partner, donate, volunteer, or simply learn more — 
+                Whether you want to partner, donate, volunteer, or simply learn more
                 we would love to hear from you. One conversation can change a life.
             </p>
         </div>

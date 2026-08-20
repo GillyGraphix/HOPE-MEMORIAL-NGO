@@ -33,8 +33,8 @@
                 <span class="text-sky-400">Dispensary</span>
             </h1>
             <p class="text-sky-100 text-xl font-light leading-relaxed drop-shadow-md">
-                The frontline of all HMSF programs — where every consultation, every screening, 
-                and every outreach visit translates into real, life-saving clinical impact.
+                The frontline of all HMSF programs where every consultation, every screening, 
+                and every outreach visit translates into real, life saving clinical impact.
             </p>
             <div class="mt-8 flex flex-wrap gap-4">
                 <div class="flex items-center space-x-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2.5 shadow-lg">
@@ -78,7 +78,7 @@
                 </p>
                 <p class="text-slate-600 leading-relaxed">
                     Every service is designed with <strong class="text-slate-800">dignity, accessibility, and quality</strong> in 
-                    mind — ensuring that even the most vulnerable populations receive timely and effective care.
+                    mind ensuring that even the most vulnerable populations receive timely and effective care.
                 </p>
                 <div class="bg-sky-50 border border-sky-100 rounded-3xl p-8 space-y-4 shadow-sm mt-8">
                     <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 mb-2">Medical Officers In-Charge</p>
@@ -88,7 +88,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                             </svg>
                         </div>
-                        <p class="font-black text-slate-800 text-sm sm:text-base">Dr. Theresia Dawas — Founder & Exec. Director</p>
+                        <p class="font-black text-slate-800 text-sm sm:text-base">Dr. Theresia Dawas (Founder & Exec. Director)</p>
                     </div>
                     <div class="flex items-center space-x-4">
                         <div class="bg-sky-200 text-sky-700 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
@@ -96,7 +96,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                             </svg>
                         </div>
-                        <p class="font-black text-slate-800 text-sm sm:text-base">Dr. Michael Mahole — Founder & Co-Director</p>
+                        <p class="font-black text-slate-800 text-sm sm:text-base">Dr. Michael Mahole (Founder & Co-Director)</p>
                     </div>
                 </div>
             </div>
@@ -104,10 +104,10 @@
             <div class="space-y-4">
                 @php
                     $services = [
-                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />', 'title' => 'Outpatient Clinical Care', 'desc' => 'For acute and chronic conditions — serving patients from rural and semi-urban communities who otherwise have no access to professional medical care.', 'color' => 'sky'],
+                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />', 'title' => 'Outpatient Clinical Care', 'desc' => 'For acute and chronic conditions serving patients from rural and semi-urban communities who otherwise have no access to professional medical care.', 'color' => 'sky'],
                         ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />', 'title' => 'Maternal & Child Health Services', 'desc' => 'Focused on safe pregnancy, safe delivery, and healthy growth from the earliest stages of life.', 'color' => 'orange'],
-                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />', 'title' => 'Diagnostic Services', 'desc' => 'Supporting early detection and accurate treatment through on-site diagnostics including anaemia screening.', 'color' => 'sky'],
-                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />', 'title' => 'Preventive Care', 'desc' => 'Designed to reduce avoidable illness and complications before they arise — especially for pregnant and postpartum women.', 'color' => 'orange'],
+                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />', 'title' => 'Diagnostic Services', 'desc' => 'Supporting early detection and accurate treatment through on site diagnostics including anaemia screening.', 'color' => 'sky'],
+                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />', 'title' => 'Preventive Care', 'desc' => 'Designed to reduce avoidable illness and complications before they arise especially for pregnant and postpartum women.', 'color' => 'orange'],
                     ];
                 @endphp
                 @foreach($services as $service)
@@ -141,12 +141,12 @@
                     SPARK Delivered<br>Through the Dispensary
                 </h2>
                 <p class="text-slate-600 leading-relaxed">
-                    Our flagship initiative, the SPARK — Support for Prenatal and Postnatal Anaemia 
+                    Our flagship initiative, the SPARK Support for Prenatal and Postnatal Anaemia 
                     Resilience Kit, is implemented through this integrated system.
                 </p>
                 <p class="text-slate-600 leading-relaxed">
                     SPARK combines health education, nutritional support, anaemia prevention tools, and 
-                    follow-up care to improve maternal outcomes and strengthen community resilience.
+                    follow up care to improve maternal outcomes and strengthen community resilience.
                 </p>
                 <a href="/projects" class="inline-flex items-center text-sky-600 font-black text-[12px] uppercase tracking-widest hover:text-sky-800 transition group mt-4">
                     Learn About SPARK
@@ -158,7 +158,7 @@
                     <div class="text-4xl font-black text-sky-200 opacity-50">01</div>
                     <p class="text-[10px] font-black uppercase tracking-widest text-sky-300">Delivered Here</p>
                     <h3 class="font-black text-xl leading-snug">Early Anaemia Screening</h3>
-                    <p class="text-sky-100 text-sm leading-relaxed">Identifying anaemia before it becomes dangerous — connecting women to care in the first trimester.</p>
+                    <p class="text-sky-100 text-sm leading-relaxed">Identifying anaemia before it becomes dangerous connecting women to care in the first trimester.</p>
                 </div>
                 <div class="bg-orange-500 rounded-3xl p-8 text-white space-y-4 shadow-lg">
                     <div class="text-4xl font-black text-orange-200 opacity-50">02</div>
@@ -189,7 +189,7 @@
                 The Outpatient Clinic
             </h2>
             <p class="text-slate-500 mt-6 max-w-2xl mx-auto text-lg leading-relaxed font-light">
-                The outpatient clinic is the heartbeat of Hope Memorial Dispensary — a place where 
+                The outpatient clinic is the heartbeat of Hope Memorial Dispensary a place where 
                 quality care meets community trust, and where no patient is turned away due to distance or circumstance.
             </p>
         </div>
@@ -199,10 +199,10 @@
                 $clinicServices = [
                     ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375c0 .621-.504 1.125-1.125 1.125h-6.375a1.125 1.125 0 01-1.125-1.125V9.375c0-.621.504-1.125 1.125-1.125z" />', 'title' => 'General Outpatient Consultations', 'desc' => 'Diagnosis and management of acute and chronic medical conditions for all ages.', 'color' => 'sky'],
                     ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />', 'title' => 'Antenatal Care (ANC)', 'desc' => 'Comprehensive prenatal visits including examinations, screenings, and supplementation.', 'color' => 'orange'],
-                    ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />', 'title' => 'Postnatal Care (PNC)', 'desc' => 'Follow-up care for mothers and newborns after delivery, including anaemia recovery monitoring.', 'color' => 'sky'],
+                    ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />', 'title' => 'Postnatal Care (PNC)', 'desc' => 'Follow up care for mothers and newborns after delivery, including anaemia recovery monitoring.', 'color' => 'sky'],
                     ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />', 'title' => 'Child Health Services', 'desc' => 'Growth monitoring, immunization support, and malnutrition management for infants and children.', 'color' => 'orange'],
                     ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25c-1.892 2.768-4.5 5.564-4.5 8.625 0 2.485 2.015 4.5 4.5 4.5s4.5-2.015 4.5-4.5c0-3.061-2.608-5.857-4.5-8.625z" />', 'title' => 'Anaemia Screening & Management', 'desc' => 'On-site haemoglobin testing, iron supplementation, and personalized treatment plans.', 'color' => 'red'],
-                    ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />', 'title' => 'Medication & Supplementation', 'desc' => 'Iron-folic acid, deworming, and essential medicines provided as part of comprehensive care.', 'color' => 'sky'],
+                    ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />', 'title' => 'Medication & Supplementation', 'desc' => 'Iron folic acid, deworming, and essential medicines provided as part of comprehensive care.', 'color' => 'sky'],
                 ];
             @endphp
             @foreach($clinicServices as $srv)
@@ -228,7 +228,7 @@
                     </h3>
                     <p class="text-sky-200 leading-relaxed text-lg">
                         Every service at Hope Memorial Dispensary is designed with three non-negotiable 
-                        principles in mind. We believe that quality healthcare is not a privilege for the few — 
+                        principles in mind. We believe that quality healthcare is not a privilege for the few 
                         it is a right for all, regardless of geography, income, or circumstance.
                     </p>
                     <p class="text-sky-200 leading-relaxed text-lg">
@@ -297,9 +297,9 @@
                     @php
                         $outreach = [
                             ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />', 'title' => 'Mobile Clinics', 'desc' => 'Bringing clinical services directly into remote villages and Maasai pastoralist communities.', 'color' => 'sky'],
-                            ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />', 'title' => 'Health Education Campaigns', 'desc' => 'Community-level awareness on maternal anaemia, nutrition, and antenatal care.', 'color' => 'orange'],
+                            ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />', 'title' => 'Health Education Campaigns', 'desc' => 'Community level awareness on maternal anaemia, nutrition, and antenatal care.', 'color' => 'orange'],
                             ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />', 'title' => 'Community Screening Initiatives', 'desc' => 'Haemoglobin testing and anaemia detection beyond the dispensary walls.', 'color' => 'sky'],
-                            ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />', 'title' => 'Community Health Volunteers', 'desc' => 'Trained local volunteers who identify at-risk mothers and connect them to care.', 'color' => 'orange'],
+                            ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />', 'title' => 'Community Health Volunteers', 'desc' => 'Trained local volunteers who identify at risk mothers and connect them to care.', 'color' => 'orange'],
                         ];
                     @endphp
                     @foreach($outreach as $item)
@@ -331,7 +331,7 @@
                     improve health outcomes across generations.
                 </p>
                 <p class="text-slate-600 leading-relaxed">
-                    By investing in people, we ensure that impact is not only immediate — but sustainable.
+                    By investing in people, we ensure that impact is not only immediate but sustainable.
                 </p>
 
                 <div class="bg-gradient-to-br from-orange-500 to-orange-700 rounded-3xl p-10 text-white space-y-8 shadow-lg mt-8">
@@ -375,7 +375,7 @@
         <div class="text-center mb-14">
             <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-400 mb-4">2026 – 2036</p>
             <h2 class="text-4xl sm:text-5xl font-black tracking-normal leading-snug">
-                Guided by a Long-Term Vision
+                Guided by a Long Term Vision
             </h2>
             <p class="text-sky-300 mt-6 max-w-2xl mx-auto leading-relaxed text-lg font-light">
                 Our 10-year strategic plan sets a bold direction for the future of clinical and community healthcare.
@@ -415,7 +415,7 @@
 <section class="py-24 bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-inner">
     <div class="container mx-auto px-4 max-w-4xl text-center">
         <h2 class="text-4xl font-black tracking-normal mb-6">Partner With Our Clinical Team</h2>
-        <p class="text-orange-50 mb-10 leading-relaxed text-lg font-light drop-shadow-sm">Whether you're a healthcare professional, an organization, or a donor — there is a role for you in strengthening frontline maternal healthcare in Tanzania.</p>
+        <p class="text-orange-50 mb-10 leading-relaxed text-lg font-light drop-shadow-sm">Whether you're a healthcare professional, an organization, or a donor there is a role for you in strengthening frontline maternal healthcare in Tanzania.</p>
         <div class="flex flex-col sm:flex-row gap-5 justify-center">
             <a href="/contact" class="bg-white text-orange-600 font-black text-[12px] uppercase tracking-widest px-10 py-4 rounded-full hover:bg-orange-50 transition shadow-lg shadow-orange-700/30">Get In Touch</a>
             <a href="/donate" class="border border-white/50 bg-white/10 backdrop-blur-sm hover:border-white text-white font-black text-[12px] uppercase tracking-widest px-10 py-4 rounded-full transition shadow-lg shadow-orange-700/30">Support The Dispensary</a>

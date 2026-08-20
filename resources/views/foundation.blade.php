@@ -64,7 +64,7 @@
                 The <span class="text-sky-400">Foundation</span>
             </h1>
             <p class="text-sky-100 text-xl font-light leading-relaxed drop-shadow-md">
-                A non-profit organization dedicated to improving maternal, newborn, and child health — with a strong focus on the prevention and management of anaemia during pregnancy and the postnatal period.
+                A non-profit organization dedicated to improving maternal, newborn, and child health with a strong focus on the prevention and management of anaemia during pregnancy and the postnatal period.
             </p>
         </div>
     </div>
@@ -100,7 +100,7 @@
                 <p class="text-slate-600 leading-relaxed">
                     The organization is situated in the heart of <strong class="text-slate-800">Mto wa Mbu, near Lake Manyara National Park</strong>, 
                     serving as a strategic gateway to the Ngorongoro wildlife corridor. This location allows us 
-                    to directly serve rural and semi-urban communities where access to maternal healthcare services 
+                    to directly serve rural and semi urban communities where access to maternal healthcare services 
                     remains limited.
                 </p>
             </div>
@@ -122,7 +122,7 @@
                     <p class="text-sky-100 leading-relaxed">
                         It is through this facility that our maternal health interventions are delivered, including anaemia 
                         screening, antenatal and postnatal care support, nutrition counseling, and referral services. 
-                        The dispensary strengthens our ability to translate community-based programs into real, life-saving clinical impact.
+                        The dispensary strengthens our ability to translate community based programs into real, life saving clinical impact.
                     </p>
                 </div>
 
@@ -248,7 +248,7 @@
                     improve health outcomes across generations.
                 </p>
                 <p class="text-orange-100 leading-relaxed">
-                    By investing in people, we ensure that impact is not only immediate — but sustainable.
+                    By investing in people, we ensure that impact is not only immediate but sustainable.
                 </p>
             </div>
         </div>
@@ -267,23 +267,23 @@
         <div class="text-center mb-16">
             <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-400 mb-4">Strategic Roadmap</p>
             <h2 class="text-4xl sm:text-5xl font-black tracking-normal leading-snug">
-                Our 10-Year Vision<br>
+                Our 10 Year Vision<br>
                 <span class="text-sky-400">From Survival to Strength</span>
             </h2>
             <p class="text-sky-300 mt-6 max-w-3xl mx-auto text-lg leading-relaxed font-light">
                 Over the next decade, Hope Memorial Spark Foundation (HMSF) envisions a future where maternal 
-                survival in Monduli is no longer uncertain — it is expected, protected, and sustained by a system that works.
+                survival in Monduli is no longer uncertain it is expected, protected, and sustained by a system that works.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             @php
                 $visions = [
-                    ['title' => 'Pregnancy Will No Longer Begin in Silence', 'desc' => 'Every woman — regardless of distance, culture, or circumstance — will be reached early, connected to care, and supported from the very beginning of her journey.'],
+                    ['title' => 'Pregnancy Will No Longer Begin in Silence', 'desc' => 'Every woman regardless of distance, culture, or circumstance will be reached early, connected to care, and supported from the very beginning of her journey.'],
                     ['title' => 'Anaemia Will No Longer Progress Unnoticed', 'desc' => 'Through early screening, continuous monitoring, and accessible interventions, mothers will be identified, supported, and protected before risk becomes crisis.'],
-                    ['title' => 'Care Will No Longer Be Fragmented', 'desc' => 'What is now a series of missed opportunities will become a continuous, coordinated system — from first contact, through pregnancy, to full recovery after childbirth.'],
+                    ['title' => 'Care Will No Longer Be Fragmented', 'desc' => 'What is now a series of missed opportunities will become a continuous, coordinated system from first contact, through pregnancy, to full recovery after childbirth.'],
                     ['title' => 'Delivery Will No Longer Be a Moment of Uncertainty', 'desc' => 'Mothers will arrive at childbirth stronger, prepared, and supported by a system that has followed them every step of the way.'],
-                    ['title' => 'Survival Will No Longer Be the Endpoint', 'desc' => 'Mothers will not just survive — they will recover, regain strength, and thrive, with the ability to care for their children and shape their families\' futures.'],
+                    ['title' => 'Survival Will No Longer Be the Endpoint', 'desc' => 'Mothers will not just survive they will recover, regain strength, and thrive, with the ability to care for their children and shape their families\' futures.'],
                     ['title' => 'The Cycle of Intergenerational Vulnerability Will Be Disrupted', 'desc' => 'Communities will be informed, engaged, and actively supporting maternal health across generations, creating permanent change.'],
                 ];
             @endphp
@@ -298,14 +298,14 @@
 
         <div class="bg-white/5 border border-white/10 rounded-3xl p-12 backdrop-blur-sm">
             <div class="text-center mb-10">
-                <h3 class="text-2xl font-black text-white mb-3 tracking-normal">The Scale of Our Ambition — 2026 to 2036</h3>
+                <h3 class="text-2xl font-black text-white mb-3 tracking-normal">The Scale of Our Ambition (2026 to 2036)</h3>
                 <p class="text-sky-300">Within 10 years, HMSF aims to:</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 @php
                     $ambitions = [
                         'Establish a replicable maternal health model centered on the SPARK system',
-                        'Expand from Mto wa Mbu and Monduli to multiple high-need districts across Tanzania',
+                        'Expand from Mto wa Mbu and Monduli to multiple high need districts across Tanzania',
                         'Reach thousands of mothers annually with continuous anaemia prevention and care',
                         'Demonstrate measurable reductions in maternal anaemia, complications, and preventable deaths',
                         'Build a system where no mother falls through the gaps of care',
@@ -339,7 +339,7 @@
         </p>
         <p class="text-orange-50 text-lg leading-relaxed font-medium drop-shadow-sm">
             Together with our partners, supporters, and communities, we are building a healthier, 
-            stronger future — one life at a time.
+            stronger future one life at a time.
         </p>
     </div>
 </section>
@@ -388,7 +388,7 @@
                             access to essential healthcare services.
                         </p>
                         <p class="text-slate-600 leading-relaxed mb-4">
-                            Her leadership goes beyond treatment — it is about transformation. At Hope Memorial 
+                            Her leadership goes beyond treatment it is about transformation. At Hope Memorial 
                             Dispensary, she ensures that underserved populations receive timely, affordable, and life-saving 
                             care. Through Hope Memorial Spark Foundation, she scales this impact by designing sustainable 
                             programs, mobilizing communities, and building partnerships that create lasting change.
@@ -434,7 +434,7 @@
                             Dr. Michael Mahole is a Tanzanian clinician, bold changemaker, and results-driven leader 
                             redefining frontline healthcare delivery in underserved communities. As the Founder and Co-Director 
                             of Hope Memorial Spark Foundation, he combines sharp clinical expertise with strategic vision 
-                            to build solutions that are not only impactful — but sustainable.
+                            to build solutions that are not only impactful but sustainable.
                         </p>
                         <p class="text-slate-600 leading-relaxed mb-4">
                             At the heart of his work lies action. Dr. Michael is not confined to boardrooms or policy 
@@ -444,9 +444,9 @@
                             often turning limited resources into life-saving outcomes.
                         </p>
                         <p class="text-slate-600 leading-relaxed mb-4">
-                            Known for his precision, discipline, and forward-thinking mindset, Dr. Michael has a unique 
+                            Known for his precision, discipline, and forward thinking mindset, Dr. Michael has a unique 
                             ability to translate complex health challenges into practical, scalable interventions. His work 
-                            spans clinical care, program design, and operational leadership — ensuring that every initiative 
+                            spans clinical care, program design, and operational leadership ensuring that every initiative 
                             under the foundation is grounded in real impact, not just intention.
                         </p>
                         <p class="text-slate-600 leading-relaxed mb-4">
@@ -456,7 +456,7 @@
                             unshakable commitment to excellence.
                         </p>
                         <div class="bg-orange-500 rounded-2xl p-6 shadow-sm mt-6">
-                            <p class="text-white text-[11px] font-black uppercase tracking-[0.2em] leading-relaxed">Dr. Michael represents a new generation of African health leaders — those who do not wait for change, but build it.</p>
+                            <p class="text-white text-[11px] font-black uppercase tracking-[0.2em] leading-relaxed">Dr. Michael represents a new generation of African health leaders those who do not wait for change, but build it.</p>
                         </div>
                     </div>
                     <button
@@ -501,20 +501,20 @@
                         <div class="bio-fade bg-gradient-to-t from-slate-50 to-transparent group-hover:from-sky-50"></div>
                         <p class="text-slate-600 text-sm leading-relaxed mb-3">
                             A seasoned Tanzanian medical doctor with extensive expertise in Obstetrics and Gynaecology. 
-                            With years of hands-on practice at Mto wa Mbu Health Center in Arusha region, Dr. Mbimbi has 
+                            With years of hands on practice at Mto wa Mbu Health Center in Arusha region, Dr. Mbimbi has 
                             built a strong reputation for managing complex obstetric cases, supporting safe deliveries, and 
-                            improving maternal outcomes in resource-limited settings. His work reflects a rare combination of 
+                            improving maternal outcomes in resource limited settings. His work reflects a rare combination of 
                             technical mastery and compassionate care, earning the trust of both patients and colleagues 
                             in one of Tanzania's most diverse and dynamic communities.
                         </p>
                         <p class="text-slate-600 text-sm leading-relaxed">
                             Beyond the clinical setting, he plays a critical advisory role within the foundation, where his 
-                            experience directly informs program design, maternal health protocols, and quality-of-care standards. 
-                            He brings a grounded, real-world perspective that strengthens decision-making and ensures 
-                            interventions remain practical, effective, and patient-centered. Known for his steady leadership, 
+                            experience directly informs program design, maternal health protocols, and quality of care standards. 
+                            He brings a grounded, real world perspective that strengthens decision making and ensures 
+                            interventions remain practical, effective, and patient centered. Known for his steady leadership, 
                             humility, and depth of experience, Dr. Mbimbi represents the voice of clinical wisdom within 
                             the foundation's governance. His contributions help bridge the gap between frontline healthcare 
-                            realities and long-term strategic vision.
+                            realities and long term strategic vision.
                         </p>
                     </div>
                     <button
@@ -547,8 +547,8 @@
                         <div class="bio-fade bg-gradient-to-t from-slate-50 to-transparent group-hover:from-sky-50"></div>
                         <p class="text-slate-600 text-sm leading-relaxed mb-3">
                             A distinguished Tanzanian medical doctor with a strong background in Obstetrics and Gynaecology. 
-                            With extensive experience in managing both routine and high-risk obstetric cases, Dr. Marmo has 
-                            earned a reputation for precision, sound clinical judgment, and calm decision-making in critical 
+                            With extensive experience in managing both routine and high risk obstetric cases, Dr. Marmo has 
+                            earned a reputation for precision, sound clinical judgment, and calm decision making in critical 
                             momments. His work reflects a deep understanding of women's health across all stages of life, 
                             particularly in settings where timely intervention can mean the difference between life and loss.
                         </p>
@@ -557,8 +557,8 @@
                             to policy direction, quality assurance, and the continuous improvement of maternal health services. 
                             His input is rooted in years of frontline experience, ensuring that strategies remain clinically 
                             relevant and responsive to real community needs. He is known for his analytical thinking, 
-                            professional integrity, and commitment to raising standards of care in resource-limited environments. 
-                            Dr. Marmo stands as a respected voice in women's health — bringing depth, discipline, and clarity 
+                            professional integrity, and commitment to raising standards of care in resource limited environments. 
+                            Dr. Marmo stands as a respected voice in women's health bringing depth, discipline, and clarity 
                             to every space he serves.
                         </p>
                     </div>
@@ -594,18 +594,18 @@
                             A highly accomplished Tanzanian accounting professional who plays a pivotal role in strengthening 
                             financial governance, transparency, and strategic resource management within the foundation.
                             With a strong academic and professional foundation in accountancy, Mr. Gasper has built a 
-                            reputation for precision, integrity, and analytical excellence — developing advanced expertise in 
+                            reputation for precision, integrity, and analytical excellence developing advanced expertise in 
                             financial reporting, auditing, budgeting, and compliance systems.
                         </p>
                         <p class="text-slate-600 text-sm leading-relaxed mb-3">
                             His leadership style blends technical mastery with ethical responsibility, making him a cornerstone 
                             in safeguarding the foundation's financial health. Within the foundation, Mr. Gasper brings a 
-                            disciplined and visionary approach to financial stewardship — ensuring that every resource is 
+                            disciplined and visionary approach to financial stewardship ensuring that every resource is 
                             accounted for with accountability and purpose, enabling programs to run efficiently and sustainably.
                         </p>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            Beyond numbers, Mr. Gasper is driven by a deep commitment to community impact — believing that 
-                            sound financial management is about unlocking opportunities for life-changing initiatives in 
+                            Beyond numbers, Mr. Gasper is driven by a deep commitment to community impact believing that 
+                            sound financial management is about unlocking opportunities for life changing initiatives in 
                             maternal health, community empowerment, and sustainable development. Respected for his 
                             professionalism and calm leadership, he stands as a key pillar in advancing the mission of 
                             the Hope Memorial Spark Foundation.
@@ -647,14 +647,14 @@
                             coordination, and management of public resources within local government systems.
                         </p>
                         <p class="text-slate-600 text-sm leading-relaxed mb-3">
-                            In her role within the foundation, Ms. Anna is the backbone of operational execution — 
+                            In her role within the foundation, Ms. Anna is the backbone of operational execution
                             overseeing supply chains, coordinating field activities, and ensuring that every program reaches 
                             intended communities without delay. Her sharp attention to detail and ability to anticipate 
                             logistical challenges make her an invaluable force behind successful outreach initiatives.
                         </p>
                         <p class="text-slate-600 text-sm leading-relaxed">
                             What distinguishes Ms. Anna is her calm leadership under pressure and her deep commitment to 
-                            community impact — believing that effective logistics is about ensuring dignity, access, and equity 
+                            community impact believing that effective logistics is about ensuring dignity, access, and equity 
                             for underserved populations, especially women and children in rural communities. Respected for her 
                             discipline, teamwork, and commitment to service, she continues to strengthen the operational 
                             heartbeat of the foundation.
@@ -699,7 +699,7 @@
                         <p class="text-slate-600 text-sm leading-relaxed mb-3">
                             Within the foundation, she brings a grounded and practical perspective that bridges policy 
                             understanding with community realities. She plays a key role in guiding programs that are 
-                            culturally sensitive, community-driven, and aligned with sustainable development goals. Her 
+                            culturally sensitive, community driven, and aligned with sustainable development goals. Her 
                             ability to listen, analyze, and translate community needs into actionable strategies makes her 
                             an essential voice in shaping impactful interventions.
                         </p>
@@ -755,7 +755,7 @@
                         </p>
                         <p class="text-sky-200 text-sm leading-relaxed">
                             Within the Hope Memorial Spark Foundation, Mr. Kisiaya provides a rare and powerful bridge 
-                            between tradition and development — advising on community engagement strategies that respect 
+                            between tradition and development advising on community engagement strategies that respect 
                             cultural context and ensuring that interventions are both culturally acceptable and socially 
                             sustainable. Known for his calm authority, deep insight, and unwavering commitment to harmony, 
                             he stands as a guardian of social order and community cohesion, inspiring unity and protecting 

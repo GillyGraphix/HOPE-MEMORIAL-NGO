@@ -38,7 +38,7 @@
             
             <p class="text-sky-100 text-xl font-light leading-relaxed mb-10 drop-shadow-md">
                 Every day, a mother enters pregnancy in Monduli without care. Every day, anaemia goes undetected. 
-                Every day, a preventable risk becomes a life-threatening emergency. How many more should we wait for?
+                Every day, a preventable risk becomes a life threatening emergency. How many more should we wait for?
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4">
@@ -121,7 +121,7 @@
                 How to Donate
             </h2>
             <p class="text-slate-500 mt-4 max-w-2xl mx-auto leading-relaxed text-lg">
-                Your contribution directly funds life-saving care. You can send your donation securely through direct bank transfer to our official foundation account below.
+                Your contribution directly funds life saving care. You can send your donation securely through direct bank transfer to our official foundation account below.
             </p>
         </div>
 

@@ -67,14 +67,14 @@
                 </h3>
                 <p class="text-slate-600 text-lg leading-relaxed">
                     In Monduli District, nestled within the vast Rift Valley of northern Tanzania, pregnancy is not 
-                    always a moment of anticipation — it is often a test of survival.
+                    always a moment of anticipation it is often a test of survival.
                 </p>
                 <p class="text-slate-600 leading-relaxed">
                     For many women, especially within Maasai pastoralist communities, the journey to motherhood 
                     unfolds far from the safety of skilled medical care. Distances are long. Roads are rough or 
                     nonexistent. Health facilities are few. But the barriers are not only physical. Deeply rooted 
                     cultural norms, limited awareness, and fragile health systems combine to create a reality where 
-                    seeking care is delayed — or never happens at all.
+                    seeking care is delayed or never happens at all.
                 </p>
                 <p class="text-slate-600 leading-relaxed">
                     A woman may carry her pregnancy quietly, without a single antenatal visit. She may rely on 
@@ -105,7 +105,7 @@
                 </div>
                 <div class="bg-orange-500 rounded-2xl p-7 text-white space-y-3 shadow-lg shadow-orange-500/20">
                     <p class="text-[11px] font-black uppercase tracking-widest text-orange-200">The Result</p>
-                    <p class="font-black text-xl leading-snug">Seeking care is delayed — or never happens at all.</p>
+                    <p class="font-black text-xl leading-snug">Seeking care is delayed or never happens at all.</p>
                 </div>
             </div>
         </div>
@@ -116,11 +116,11 @@
                 <div class="space-y-6">
                     <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-400">At The Center of This Crisis</p>
                     <h3 class="text-3xl font-black tracking-normal leading-snug">
-                        Maternal Anaemia — <br>
+                        Maternal Anaemia <br>
                         <span class="text-sky-400">The Silent Killer</span>
                     </h3>
                     <p class="text-sky-200 leading-relaxed">
-                        At the center of this crisis is a condition that rarely announces itself loudly — maternal anaemia. 
+                        At the center of this crisis is a condition that rarely announces itself loudly maternal anaemia. 
                         It does not demand attention in its early stages. It creeps in silently, draining strength, reducing 
                         resilience, and weakening the body's ability to cope with the intense demands of pregnancy and childbirth. 
                         But its consequences are anything but silent.
@@ -161,7 +161,7 @@
                         ['step' => '01', 'title' => 'Limited Nutrition', 'desc' => 'A girl grows up in a community where nutrition is limited and certain foods are restricted during pregnancy.'],
                         ['step' => '02', 'title' => 'Vulnerable Motherhood', 'desc' => 'She enters motherhood already vulnerable, lacking access to early care.'],
                         ['step' => '03', 'title' => 'Anaemia Develops', 'desc' => 'She delivers without support and becomes anaemic. Her child is born underweight or premature.'],
-                        ['step' => '04', 'title' => 'Cycle Repeats', 'desc' => 'The pattern repeats — quietly, persistently, across generations.'],
+                        ['step' => '04', 'title' => 'Cycle Repeats', 'desc' => 'The pattern repeats quietly, persistently, across generations.'],
                     ];
                 @endphp
                 @foreach($cycle as $item)
@@ -176,7 +176,7 @@
             <div class="bg-orange-50 border border-orange-100 rounded-2xl p-8">
                 <p class="text-slate-700 text-lg leading-relaxed">
                     <strong class="text-orange-600 font-black">This is not simply a medical issue.</strong> It is a system failure reinforced by distance, by silence, and by 
-                    norms that discourage timely care. It is a reality where preventable conditions become life-threatening 
+                    norms that discourage timely care. It is a reality where preventable conditions become life threatening 
                     because the right support does not arrive at the right time. Where knowledge is limited, and options are few. 
                     Where survival often depends on chance.
                 </p>
@@ -190,7 +190,7 @@
                 </p>
                 <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
                     <p class="text-white font-bold text-lg leading-relaxed mb-2">
-                        And because when a mother survives — truly survives — everything changes.
+                        And because when a mother survives truly survives everything changes.
                     </p>
                     <p class="text-sky-200 leading-relaxed">
                         Her child is more likely to grow, to thrive, to reach their full potential.
@@ -229,7 +229,7 @@
                 <h3 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-normal leading-snug">
                     Turning Survival Into a System
                 </h3>
-                <p class="text-slate-600 text-lg leading-relaxed">In Monduli, the problem is not mystery — it is predictability.</p>
+                <p class="text-slate-600 text-lg leading-relaxed">In Monduli, the problem is not mystery it is predictability.</p>
                 
                 <div class="space-y-3">
                     @php
@@ -256,7 +256,7 @@
                 <div class="bg-sky-600 rounded-2xl p-8 text-white space-y-3 shadow-lg shadow-sky-600/20">
                     <p class="text-[11px] font-black uppercase tracking-[0.25em] text-sky-200">The Mission Objective</p>
                     <p class="font-black text-xl leading-snug">
-                        To interrupt a deadly pattern — and replace it with a system that protects a mother 
+                        To interrupt a deadly pattern and replace it with a system that protects a mother 
                         from the moment pregnancy begins until long after delivery.
                     </p>
                 </div>
@@ -267,10 +267,10 @@
                 <h3 class="text-4xl font-black text-slate-800 tracking-normal">SPARK</h3>
                 <p class="text-sky-600 font-black text-sm uppercase tracking-wider">Support for Prenatal and Postnatal Anaemia Resilience Kit</p>
                 <p class="text-slate-600 text-lg leading-relaxed">
-                    SPARK becomes more than a tool — it becomes a strategy for survival. But a kit alone cannot 
-                    solve a systemic problem. What is required is a structured, repeatable model — one that works 
+                    SPARK becomes more than a tool it becomes a strategy for survival. But a kit alone cannot 
+                    solve a systemic problem. What is required is a structured, repeatable model one that works 
                     within the realities of Monduli. One that respects culture while challenging what harms. 
-                    One that combines clinical care, community trust, and continuous follow-up.
+                    One that combines clinical care, community trust, and continuous follow up.
                 </p>
                 <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 space-y-3">
                     <p class="text-[11px] font-black uppercase tracking-[0.25em] text-slate-500">The Solution is Built on</p>
@@ -303,11 +303,11 @@
                         By the time they are seen, anaemia is already advanced, and the window for prevention has narrowed.
                     </p>
                     <p class="text-slate-600 leading-relaxed">
-                        The first intervention focuses on timing — because timing determines survival. This phase ensures 
+                        The first intervention focuses on timing because timing determines survival. This phase ensures 
                         that a woman is reached early in pregnancy, or ideally, the moment pregnancy is suspected.
                     </p>
                     <p class="text-slate-600 leading-relaxed">
-                        Through targeted community engagement — working with women, men, elders, and local influencers — 
+                        Through targeted community engagement working with women, men, elders, and local influencers
                         the silence around early antenatal care is broken. Pregnancy is no longer hidden until it becomes 
                         obvious; it becomes a moment to act.
                     </p>
@@ -364,12 +364,12 @@
                     </div>
                     <p class="text-xl font-bold text-slate-700 border-l-4 border-orange-400 pl-4 py-1">Build Resilience Through Pregnancy</p>
                     <p class="text-slate-600 leading-relaxed">
-                        Starting care is not enough. In many cases, women attend one visit — and disappear. Distance, 
+                        Starting care is not enough. In many cases, women attend one visit and disappear. Distance, 
                         competing responsibilities, cultural pressures, and lack of follow-up pull them away from the system.
                     </p>
                     <p class="text-orange-600 font-bold bg-orange-50 inline-block px-3 py-1 rounded">This is where most interventions fail.</p>
                     <p class="text-slate-600 leading-relaxed">
-                        The second phase focuses on continuity — because anaemia is not a one-time condition. 
+                        The second phase focuses on continuity because anaemia is not a one time condition. 
                         It is a process that evolves throughout pregnancy.
                     </p>
                     <p class="text-slate-600 leading-relaxed">
@@ -437,8 +437,8 @@
                         the assumption is that the danger has passed. But for anaemia, this is often when the burden deepens.
                     </p>
                     <p class="text-sky-200 leading-relaxed">
-                        Blood loss during delivery, combined with pre-existing anaemia, leaves many women severely depleted. 
-                        Yet postnatal follow-up is rare. Recovery is expected to happen naturally — even when the body no 
+                        Blood loss during delivery, combined with pre existing anaemia, leaves many women severely depleted. 
+                        Yet postnatal follow up is rare. Recovery is expected to happen naturally even when the body no 
                         longer has the capacity to restore itself.
                     </p>
                     <p class="text-sky-200 leading-relaxed">
@@ -492,7 +492,7 @@
                     @endforeach
                     <div class="bg-sky-600 rounded-2xl p-5 border border-sky-500 mt-4">
                         <p class="text-white font-black uppercase tracking-widest text-xs mb-1">The Bottom Line</p>
-                        <p class="text-sky-100 text-sm font-medium">Postnatal care is not an extension of the system — it is the completion of it.</p>
+                        <p class="text-sky-100 text-sm font-medium">Postnatal care is not an extension of the system it is the completion of it.</p>
                     </div>
                 </div>
             </div>
@@ -603,7 +603,7 @@
                 <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
                 <div class="relative z-10">
                     <h4 class="text-3xl font-black mb-4">Why This Works</h4>
-                    <p class="text-sky-300 mb-10 max-w-2xl mx-auto text-lg">Because it is designed for reality — not theory.</p>
+                    <p class="text-sky-300 mb-10 max-w-2xl mx-auto text-lg">Because it is designed for reality not theory.</p>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-sm text-sky-100 leading-relaxed text-left">
                             <p class="mb-3 opacity-80">It acknowledges that women will not always come to facilities</p>
@@ -633,7 +633,7 @@
                 <p class="text-orange-50 text-lg leading-relaxed max-w-3xl mx-auto mb-8">
                     The goal is not incremental improvement. The goal is a shift in expectation. Where pregnancy 
                     is monitored from the beginning. Where anaemia is detected early and treated effectively. 
-                    Where mothers reach delivery with strength — not depletion. Where recovery is supported — not assumed.
+                    Where mothers reach delivery with strength not depletion. Where recovery is supported not assumed.
                 </p>
                 <div class="bg-black/20 backdrop-blur border border-white/10 rounded-2xl p-8 max-w-2xl mx-auto mb-8">
                     <p class="text-white font-black text-2xl leading-relaxed">

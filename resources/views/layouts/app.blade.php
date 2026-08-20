@@ -14,7 +14,10 @@
     <link rel="apple-touch-icon" href="/images/icon-192x192.png">
 
     <title>Hope Memorial Spark Foundation</title>
+    
+    {{-- SCRIPTS & FONTS --}}
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
@@ -135,15 +138,6 @@
             0%   { transform: scale(1); opacity: 0.7; }
             100% { transform: scale(1.55); opacity: 0; }
         }
-
-        /* ========================================== */
-        /* FICHA BUTTON YA INSTALL IKIWA NDANI YA APP */
-        /* ========================================== */
-        @media all and (display-mode: standalone) {
-            #installAppBtn {
-                display: none !important;
-            }
-        }
     </style>
 </head>
 <body class="antialiased selection:bg-orange-400 selection:text-white">
@@ -230,14 +224,6 @@
         </div>
     </header>
 
-    {{-- ============================================================ --}}
-    {{-- INSTALL APP BUTTON --}}
-    {{-- ============================================================ --}}
-    <button id="installAppBtn" class="hidden items-center justify-center fixed bottom-8 left-7 lg:bottom-10 lg:left-10 z-[9998] bg-white/80 backdrop-blur-xl border border-white/60 text-slate-700 hover:bg-white hover:text-sky-600 font-black text-[10px] lg:text-[11px] uppercase tracking-widest px-5 py-2.5 lg:px-6 lg:py-3 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-300 gap-2 hover:-translate-y-1" aria-label="Install App">
-        <svg class="w-4 h-4 text-sky-500 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-        <span class="whitespace-nowrap mt-0.5">Install App</span>
-    </button>
-
     {{-- BACK TO TOP BUTTON --}}
     <button id="back-to-top" aria-label="Back to top" title="Back to top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" 
@@ -265,7 +251,6 @@
                         Improving maternal and child health through community-led solutions and professional clinical support in Tanzania.
                     </p>
                     <div class="flex items-center space-x-3">
-                        <span class="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.8)]"></span>
                         <span class="text-[10px] font-bold uppercase tracking-widest text-white">Impact Mission Active</span>
                     </div>
                 </div>
@@ -350,48 +335,7 @@
         }
 
         /* ========================================== */
-        /* 2. PWA INSTALL BUTTON LOGIC                */
-        /* ========================================== */
-        let deferredPrompt;
-        const installAppBtn = document.getElementById('installAppBtn');
-
-        window.addEventListener('beforeinstallprompt', (e) => {
-            // Zuia popup ya asili ya Google
-            e.preventDefault();
-            // Hifadhi tukio ili tulitumie baadaye
-            deferredPrompt = e;
-            // Onyesha Kitufe chetu cha "Install App" kwa usahihi
-            installAppBtn.classList.remove('hidden');
-            installAppBtn.classList.add('flex');
-            console.log('Install prompt is ready!');
-        });
-
-        installAppBtn.addEventListener('click', async () => {
-            if (deferredPrompt !== null) {
-                // Onyesha popup ya kuinstall
-                deferredPrompt.prompt();
-                // Subiri majibu ya mtumiaji
-                const { outcome } = await deferredPrompt.userChoice;
-                if (outcome === 'accepted') {
-                    console.log('Mtumiaji amekubali kuinstall App');
-                    // Ficha kitufe akishakubali
-                    installAppBtn.classList.add('hidden');
-                    installAppBtn.classList.remove('flex');
-                }
-                deferredPrompt = null;
-            }
-        });
-
-        // Ikiwa app isha-installiwa, ficha kitufe
-        window.addEventListener('appinstalled', () => {
-            installAppBtn.classList.add('hidden');
-            installAppBtn.classList.remove('flex');
-            deferredPrompt = null;
-            console.log('PWA Imefanikiwa kuinstalliwa');
-        });
-
-        /* ========================================== */
-        /* 3. ORIGINAL JAVASCRIPT YAKO                */
+        /* 2. ORIGINAL JAVASCRIPT YAKO                */
         /* ========================================== */
         document.addEventListener('DOMContentLoaded', function() {
 

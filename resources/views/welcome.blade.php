@@ -31,7 +31,6 @@
         {{-- Nimeongeza upana (max-w-5xl) ili maneno yatande vizuri kushoto na kulia --}}
         <div class="max-w-5xl space-y-10">
             <div class="inline-flex items-center space-x-3 bg-white/10 backdrop-blur border border-white/20 rounded-full px-5 py-2.5 shadow-xl">
-                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
                 <span class="text-[11px] font-black uppercase tracking-[0.25em] text-sky-200">Active Since 2026 · Mto wa Mbu, Arusha - Tanzania</span>
             </div>
 
@@ -73,7 +72,7 @@
             <div class="text-[11px] font-black uppercase tracking-[0.25em] text-orange-100">The Silent Crisis</div>
             <div class="hidden sm:block w-px h-8 bg-white/20"></div>
             <p class="text-sm md:text-base font-medium max-w-2xl leading-relaxed drop-shadow-sm">
-                In Monduli District, pregnancy is often a test of survival — not a moment of anticipation.
+                In Monduli District, pregnancy is often a test of survival not a moment of anticipation.
             </p>
             <div class="hidden sm:block w-px h-8 bg-white/20"></div>
             <a href="/projects" class="shrink-0 bg-white/10 backdrop-blur-sm border border-white/30 text-white font-black text-[10px] uppercase tracking-widest px-6 py-3 rounded-full hover:bg-white hover:text-orange-600 transition duration-300 shadow-sm hover:shadow-lg">
@@ -95,7 +94,7 @@
                 The SPARK System
             </h2>
             <p class="text-slate-500 mt-6 max-w-2xl mx-auto text-lg leading-relaxed font-light">
-                Support for Prenatal and Postnatal Anaemia Resilience Kit — three connected interventions
+                Support for Prenatal and Postnatal Anaemia Resilience Kit three connected interventions
                 that form a closed loop, ensuring no mother is lost between stages.
             </p>
         </div>
@@ -110,7 +109,7 @@
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     </div>
                     <h3 class="text-xl font-black text-slate-800 uppercase tracking-normal mb-4">Early Engagement</h3>
-                    <p class="text-slate-500 leading-relaxed mb-6">Reach her before risk begins. Connect women to care in the first trimester — before anaemia becomes invisible and dangerous.</p>
+                    <p class="text-slate-500 leading-relaxed mb-6">Reach her before risk begins. Connect women to care in the first trimester before anaemia becomes invisible and dangerous.</p>
                     <ul class="space-y-3 text-[11px] font-black uppercase tracking-widest text-sky-600">
                         <li class="flex items-center"><span class="w-1.5 h-1.5 bg-sky-500 rounded-full mr-3"></span>Early Antenatal Linkage</li>
                         <li class="flex items-center"><span class="w-1.5 h-1.5 bg-sky-500 rounded-full mr-3"></span>Baseline Screening</li>
@@ -128,7 +127,7 @@
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
                     </div>
                     <h3 class="text-xl font-black text-slate-800 uppercase tracking-normal mb-4">Continuous Care</h3>
-                    <p class="text-slate-500 leading-relaxed mb-6">Build resilience through pregnancy. Anaemia evolves — so care must be consistent, structured, and guided across all trimesters.</p>
+                    <p class="text-slate-500 leading-relaxed mb-6">Build resilience through pregnancy. Anaemia evolves so care must be consistent, structured, and guided across all trimesters.</p>
                     <ul class="space-y-3 text-[11px] font-black uppercase tracking-widest text-orange-600">
                         <li class="flex items-center"><span class="w-1.5 h-1.5 bg-orange-500 rounded-full mr-3"></span>Ongoing Anaemia Monitoring</li>
                         <li class="flex items-center"><span class="w-1.5 h-1.5 bg-orange-500 rounded-full mr-3"></span>Sustained Supplementation</li>
@@ -146,7 +145,7 @@
                         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
                     </div>
                     <h3 class="text-xl font-black text-slate-800 uppercase tracking-normal mb-4">Postnatal Recovery</h3>
-                    <p class="text-slate-500 leading-relaxed mb-6">Protect the mother after survival. Delivery is not the endpoint — recovery is where the cycle is either broken or reinforced.</p>
+                    <p class="text-slate-500 leading-relaxed mb-6">Protect the mother after survival. Delivery is not the endpoint recovery is where the cycle is either broken or reinforced.</p>
                     <ul class="space-y-3 text-[11px] font-black uppercase tracking-widest text-sky-600">
                         <li class="flex items-center"><span class="w-1.5 h-1.5 bg-sky-500 rounded-full mr-3"></span>Postnatal Anaemia Screening</li>
                         <li class="flex items-center"><span class="w-1.5 h-1.5 bg-sky-500 rounded-full mr-3"></span>Recovery Supplementation</li>
@@ -212,7 +211,7 @@
                         </svg>
                     </div>
                     <p class="text-[11px] font-black uppercase tracking-[0.25em] text-sky-200">Our Location</p>
-                    <p class="text-xl font-black leading-snug tracking-normal">Mto wa Mbu, near Lake Manyara National Park — a strategic gateway to the Ngorongoro wildlife corridor.</p>
+                    <p class="text-xl font-black leading-snug tracking-normal">Mto wa Mbu, near Lake Manyara National Park </p> A strategic gateway to the Ngorongoro wildlife corridor.</p>
                 </div>
                 <div class="bg-white border border-slate-100 rounded-3xl p-8 space-y-4 shadow-sm hover:shadow-md transition">
                     <div class="text-sky-500 w-10 h-10">
@@ -382,7 +381,7 @@
         
         <p class="text-slate-300 text-xl mb-12 font-light leading-relaxed max-w-2xl mx-auto drop-shadow-sm">
             Every day, a mother enters pregnancy in Monduli without care. Every day, anaemia goes
-            undetected. Every day, a preventable risk becomes a life-threatening emergency.
+            undetected. Every day, a preventable risk becomes a life threatening emergency.
         </p>
         
         <div class="flex flex-col sm:flex-row gap-5 justify-center">
@@ -395,4 +394,59 @@
         </div>
     </div>
 </section>
+
+{{-- ============================================================ --}}
+{{-- PWA NON-INTRUSIVE INSTALL PROMPT (SESSION-BASED) --}}
+{{-- ============================================================ --}}
+<div x-data="{ 
+        show: false, 
+        deferredPrompt: null 
+    }" 
+    x-init="
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            // Tumeibadili kuwa sessionStorage ili irudi akifunga na kufungua tena browser
+            if (!sessionStorage.getItem('hope_pwa_dismissed')) {
+                setTimeout(() => { show = true }, 3000); 
+            }
+        });
+    "
+    x-show="show"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0 translate-y-10"
+    x-transition:enter-end="opacity-100 translate-y-0"
+    x-transition:leave="transition ease-in duration-300"
+    x-transition:leave-start="opacity-100 translate-y-0"
+    x-transition:leave-end="opacity-0 translate-y-10"
+    class="fixed bottom-6 left-4 right-4 md:left-auto md:right-6 md:w-[360px] z-[9999] bg-white p-6 rounded-2xl shadow-2xl border border-slate-100"
+    style="display: none;">
+
+    <div class="flex flex-col">
+        <div class="flex items-center space-x-3 mb-3">
+            <div class="w-10 h-10 bg-sky-50 rounded-xl flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            </div>
+            <h3 class="text-slate-800 font-black tracking-normal">Install Hope App</h3>
+        </div>
+        
+        <p class="text-slate-500 text-[13px] mb-5 leading-relaxed">
+            Stay connected. Get instant updates, track our impact, and support our mission directly from your home screen.
+        </p>
+        
+        <div class="flex gap-3">
+            {{-- Hapa pia tumebadili kuwa sessionStorage --}}
+            <button @click="show = false; sessionStorage.setItem('hope_pwa_dismissed', 'true')" 
+                    class="flex-1 px-4 py-2.5 text-[11px] font-black uppercase tracking-widest text-slate-500 hover:text-sky-700 bg-slate-50 hover:bg-slate-100 rounded-lg transition">
+                Not Now
+            </button>
+            
+            <button @click="deferredPrompt.prompt(); show = false;" 
+                    class="flex-1 px-4 py-2.5 bg-orange-500 text-white rounded-lg text-[11px] font-black uppercase tracking-widest shadow-lg shadow-orange-500/30 hover:bg-orange-600 transition">
+                Install Now
+            </button>
+        </div>
+    </div>
+</div>
+
 @endsection
