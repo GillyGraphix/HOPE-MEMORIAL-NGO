@@ -138,6 +138,12 @@
             0%   { transform: scale(1); opacity: 0.7; }
             100% { transform: scale(1.55); opacity: 0; }
         }
+        
+        /* Dropdown custom styles */
+        .dropdown-menu {
+            transform-origin: top;
+            transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-orange-400 selection:text-white">
@@ -156,23 +162,67 @@
             {{-- DESKTOP NAVIGATION --}}
             <nav class="hidden lg:flex items-center space-x-1">
                 @php 
+                    // Tumeibadilisha array iweze kushikilia 'submenus' kama zipo
                     $navItems = [
-                        '/' => 'Home',
-                        'foundation' => 'Foundation',
-                        'projects' => 'Projects',
-                        'dispensary' => 'Clinical',
-                        'gallery' => 'Gallery',
-                        'donate' => 'Donate',
-                        'news' => 'Updates',
-                        'contact' => 'Contact',
+                        '/' => ['label' => 'Home'],
+                        'foundation' => [
+                            'label' => 'Foundation', 
+                            // Hapa ndipo tunapoweka dropdown items
+                            'submenu' => [
+                                '/foundation#leadership-team' => 'Our Team'
+                            ]
+                        ],
+                        'projects' => ['label' => 'Projects'],
+                        'dispensary' => ['label' => 'Clinical'],
+                        'gallery' => ['label' => 'Gallery'],
+                        'donate' => ['label' => 'Donate'],
+                        'news' => ['label' => 'Updates'],
+                        'contact' => ['label' => 'Contact'],
                     ];
                 @endphp
 
-                @foreach($navItems as $url => $label)
-                    <a href="{{ $url == '/' ? '/' : '/'.$url }}" 
-                        class="px-4 py-2 text-[11px] font-bold uppercase tracking-widest transition-colors duration-300 rounded-full {{ request()->is($url == '/' ? '/' : $url) ? 'bg-sky-50 text-sky-600' : 'text-slate-500 hover:text-sky-600 hover:bg-slate-50' }}">
-                        {{ $label }}
-                    </a>
+                @foreach($navItems as $url => $item)
+                    @if(isset($item['submenu']))
+                        {{-- DROPDOWN (Ukiwa na Submenu k.m. Foundation) --}}
+                        <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative group">
+                            <a href="{{ $url == '/' ? '/' : '/'.$url }}" 
+                               class="inline-flex items-center gap-1 px-4 py-2 text-[11px] font-bold uppercase tracking-widest transition-colors duration-300 rounded-full {{ request()->is($url == '/' ? '/' : $url) ? 'bg-sky-50 text-sky-600' : 'text-slate-500 hover:text-sky-600 hover:bg-slate-50' }}">
+                                {{ $item['label'] }}
+                                <svg class="w-3.5 h-3.5 text-current transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                            </a>
+                            
+                            {{-- Mshale (Tooltip Box) & List --}}
+                            <div x-show="open" 
+                                 x-transition:enter="transition ease-out duration-200"
+                                 x-transition:enter-start="opacity-0 translate-y-2"
+                                 x-transition:enter-end="opacity-100 translate-y-0"
+                                 x-transition:leave="transition ease-in duration-150"
+                                 x-transition:leave-start="opacity-100 translate-y-0"
+                                 x-transition:leave-end="opacity-0 translate-y-2"
+                                 class="absolute left-1/2 -translate-x-1/2 mt-1 w-48 bg-white border border-slate-100 rounded-2xl shadow-xl p-2 z-50 dropdown-menu"
+                                 style="display: none;">
+                                
+                                {{-- Kimshale juu (Little Arrow) --}}
+                                <div class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-slate-100 rotate-45"></div>
+                                
+                                <ul class="relative z-10 flex flex-col space-y-1">
+                                    @foreach($item['submenu'] as $subUrl => $subLabel)
+                                    <li>
+                                        <a href="{{ $subUrl }}" class="block px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-slate-500 hover:text-sky-600 hover:bg-sky-50 rounded-xl transition-colors">
+                                            {{ $subLabel }}
+                                        </a>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    @else
+                        {{-- LINKS ZA KAWAIDA (Zisizo na Dropdown) --}}
+                        <a href="{{ $url == '/' ? '/' : '/'.$url }}" 
+                            class="px-4 py-2 text-[11px] font-bold uppercase tracking-widest transition-colors duration-300 rounded-full {{ request()->is($url == '/' ? '/' : $url) ? 'bg-sky-50 text-sky-600' : 'text-slate-500 hover:text-sky-600 hover:bg-slate-50' }}">
+                            {{ $item['label'] }}
+                        </a>
+                    @endif
                 @endforeach
             </nav>
             
@@ -197,14 +247,40 @@
 
         {{-- APPLE-STYLE FLOATING MOBILE MENU --}}
         <div id="mobile-menu-wrapper" class="absolute top-[110%] left-4 right-4 z-10 opacity-0 scale-95 -translate-y-4 pointer-events-none transition-all duration-500 apple-spring invisible">
-            <nav class="bg-white/90 backdrop-blur-2xl border border-white/60 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] rounded-3xl p-5 overflow-hidden">
+            <nav class="bg-white/90 backdrop-blur-2xl border border-white/60 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] rounded-3xl p-5 max-h-[80vh] overflow-y-auto overflow-x-hidden">
                 <ul class="flex flex-col space-y-1">
-                    @foreach($navItems as $url => $label)
+                    @foreach($navItems as $url => $item)
                         <li>
-                            <a href="{{ $url == '/' ? '/' : '/'.$url }}" 
-                               class="block px-5 py-3.5 text-[12px] font-black uppercase tracking-widest rounded-2xl transition-all duration-300 {{ request()->is($url == '/' ? '/' : $url) ? 'bg-sky-50 text-sky-600' : 'text-slate-600 hover:bg-slate-50 hover:text-sky-600 hover:translate-x-1' }}">
-                                {{ $label }}
-                            </a>
+                            @if(isset($item['submenu']))
+                                {{-- MOBILE DROPDOWN (Imerekebishwa Link Itengwe na Button ya Kufungua) --}}
+                                <div x-data="{ mobOpen: false }" class="w-full">
+                                    <div class="flex items-center justify-between w-full rounded-2xl transition-all duration-300 {{ request()->is($url == '/' ? '/' : $url) ? 'bg-sky-50 text-sky-600' : 'text-slate-600 hover:bg-slate-50' }}">
+                                        {{-- Hii hapa inapeleka kwenye page moja kwa moja --}}
+                                        <a href="{{ $url == '/' ? '/' : '/'.$url }}" class="block flex-grow px-5 py-3.5 text-[12px] font-black uppercase tracking-widest text-left">
+                                            {{ $item['label'] }}
+                                        </a>
+                                        {{-- Hii inashusha na kupandisha dropdown ya Our Team --}}
+                                        <button @click="mobOpen = !mobOpen" class="p-3.5 text-slate-400 hover:text-sky-600 focus:outline-none transition-colors" aria-label="Toggle Submenu">
+                                            <svg class="w-5 h-5 transition-transform duration-300" :class="{ 'rotate-180': mobOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                                        </button>
+                                    </div>
+                                    <ul x-show="mobOpen" x-transition class="pl-4 pr-2 mt-1 space-y-1" style="display: none;">
+                                        @foreach($item['submenu'] as $subUrl => $subLabel)
+                                        <li>
+                                            <a href="{{ $subUrl }}" class="block px-5 py-3 text-[10px] font-bold uppercase tracking-widest rounded-xl transition-all duration-300 text-slate-500 hover:bg-sky-50 hover:text-sky-600 border-l-2 border-transparent hover:border-sky-500">
+                                                {{ $subLabel }}
+                                            </a>
+                                        </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @else
+                                {{-- MOBILE NORMAL LINK --}}
+                                <a href="{{ $url == '/' ? '/' : '/'.$url }}" 
+                                   class="block px-5 py-3.5 text-[12px] font-black uppercase tracking-widest rounded-2xl transition-all duration-300 {{ request()->is($url == '/' ? '/' : $url) ? 'bg-sky-50 text-sky-600' : 'text-slate-600 hover:bg-slate-50 hover:text-sky-600 hover:translate-x-1' }}">
+                                    {{ $item['label'] }}
+                                </a>
+                            @endif
                         </li>
                     @endforeach
                     <li class="pt-4 mt-2 border-t border-slate-100"> 

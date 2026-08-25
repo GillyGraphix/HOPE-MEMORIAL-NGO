@@ -93,7 +93,7 @@
                                 <a href="mailto:donations@hopememorial.org" class="font-black text-slate-800 hover:text-sky-600 transition text-[15px]">donations@hopememorial.org</a>
                                 <a href="mailto:appointments@hopememorial.org" class="font-black text-slate-800 hover:text-sky-600 transition text-[15px]">appointments@hopememorial.org</a>
                             </div>
-                            <p class="text-slate-500 text-sm mt-3">We respond within 48 hours on business days.</p>
+                            <p class="text-slate-500 text-sm mt-3">We respond within 24 hours on business days.</p>
                         </div>
                     </div>
 
@@ -175,7 +175,7 @@
                     </button>
 
                     <p class="text-center text-xs text-slate-400 font-bold uppercase tracking-widest">
-                        We respond within 48 business hours.
+                        We respond within 24 business hours.
                     </p>
                 </div>
             </div>

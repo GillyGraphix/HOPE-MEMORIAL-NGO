@@ -28,7 +28,6 @@
     {{-- Content Container --}}
     <div class="container mx-auto px-4 max-w-7xl relative z-20 py-32 text-center flex flex-col items-center">
 
-        {{-- Nimeongeza upana (max-w-5xl) ili maneno yatande vizuri kushoto na kulia --}}
         <div class="max-w-5xl space-y-10">
             <div class="inline-flex items-center space-x-3 bg-white/10 backdrop-blur border border-white/20 rounded-full px-5 py-2.5 shadow-xl">
                 <span class="text-[11px] font-black uppercase tracking-[0.25em] text-sky-200">Active Since 2026 · Mto wa Mbu, Arusha - Tanzania</span>
@@ -61,10 +60,9 @@
 
 
 {{-- ============================================================ --}}
-{{-- THE PROBLEM STRIP (IMPROVED) --}}
+{{-- THE PROBLEM STRIP --}}
 {{-- ============================================================ --}}
 <section class="relative py-8 shadow-xl overflow-hidden bg-gradient-to-r from-orange-600 via-orange-500 to-orange-600 z-30 border-y border-orange-400/30">
-    {{-- Dot Pattern Overlay to reduce glare and add texture --}}
     <div class="absolute inset-0 opacity-[0.07] pointer-events-none" style="background-image: radial-gradient(#000000 1px, transparent 1px); background-size: 10px 10px;"></div>
     
     <div class="container mx-auto px-4 max-w-7xl relative z-10">
@@ -100,7 +98,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
             {{-- Intervention 1 --}}
             <div class="group relative bg-gradient-to-br from-sky-50 to-white border border-sky-100 rounded-3xl p-10 hover:shadow-2xl hover:shadow-sky-100 transition-all duration-500 hover:-translate-y-2">
                 <div class="absolute top-8 right-8 text-[80px] font-black text-sky-200 opacity-50 leading-none select-none">1</div>
@@ -154,7 +151,6 @@
                     </ul>
                 </div>
             </div>
-
         </div>
 
         {{-- Connecting Arrow --}}
@@ -173,7 +169,6 @@
 <section class="py-28 bg-slate-50 border-t border-slate-200">
     <div class="container mx-auto px-4 max-w-7xl">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-
             <div class="space-y-8">
                 <div>
                     <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 mb-4">About The Foundation</p>
@@ -354,22 +349,18 @@
 
 
 {{-- ============================================================ --}}
-{{-- CALL TO ACTION BANNER (IMPROVED DESIGN) --}}
+{{-- CALL TO ACTION BANNER --}}
 {{-- ============================================================ --}}
 <section class="relative py-32 bg-slate-900 text-white overflow-hidden shadow-2xl">
     
-    {{-- Background Texture/Pattern kupunguza ukali --}}
     <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
     
-    {{-- Mwanga wa Orange unaong'aa kwa nyuma (Glowing Orb) --}}
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-full bg-orange-600/20 blur-[120px] rounded-full pointer-events-none"></div>
 
-    {{-- Giza kwa juu na chini kuleta kina (Depth) --}}
     <div class="absolute inset-0 bg-gradient-to-b from-sky-950/50 via-transparent to-slate-900/80 pointer-events-none"></div>
 
     <div class="container mx-auto px-4 max-w-5xl text-center relative z-10">
         
-        {{-- Tag ya Act Now iliyoboreshwa --}}
         <div class="inline-flex items-center space-x-2 bg-orange-500/10 border border-orange-500/20 backdrop-blur-sm px-5 py-2.5 rounded-full mb-8 shadow-sm">
             <span class="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
             <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-400">ACT NOW</p>
@@ -395,8 +386,51 @@
     </div>
 </section>
 
+
 {{-- ============================================================ --}}
-{{-- PWA NON-INTRUSIVE INSTALL PROMPT (SESSION-BASED) --}}
+{{-- STRATEGIC PARTNERSHIPS SECTION (RESPECTFUL & CLEAR) --}}
+{{-- ============================================================ --}}
+<section class="py-20 bg-slate-50 border-t border-b border-slate-100 relative overflow-hidden">
+    {{-- Decorative Background Pattern --}}
+    <div class="absolute inset-0 opacity-[0.02] pointer-events-none" style="background-image: radial-gradient(#000 1px, transparent 1px); background-size: 16px 16px;"></div>
+
+    <div class="container mx-auto px-4 max-w-7xl text-center relative z-10">
+        
+        {{-- Elegant Header --}}
+        <div class="inline-flex items-center justify-center space-x-3 mb-12">
+            <div class="h-[1px] w-12 bg-sky-200"></div>
+            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-slate-500">In Strategic Partnership With</p>
+            <div class="h-[1px] w-12 bg-sky-200"></div>
+        </div>
+        
+        {{-- Card Container: Nimeweka ziwe na grid nzuri, rasmi na inayofanana --}}
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 max-w-4xl mx-auto">
+            
+            {{-- 1. Ministry of Health (Wizara ya Afya) --}}
+            <a href="https://www.moh.go.tz/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center bg-white px-6 py-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 transition-all duration-300">
+                <img src="{{ asset('images/logo-afya.png') }}" alt="Ministry of Health Tanzania" class="h-20 w-auto object-contain mb-4">
+                <span class="text-slate-800 text-[10px] font-black uppercase tracking-widest text-center">Ministry of Health</span>
+            </a>
+
+            {{-- 2. PO-RALG (TAMISEMI) --}}
+            <a href="https://www.tamisemi.go.tz/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center bg-white px-6 py-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 transition-all duration-300">
+                <img src="{{ asset('images/logo-tamisemi.png') }}" alt="PO-RALG (TAMISEMI)" class="h-20 w-auto object-contain mb-4">
+                <span class="text-slate-800 text-[10px] font-black uppercase tracking-widest text-center">PRESIDENT OFFICE-REGIONAL ADMINISTRATION AND LOCAL GOVERNMENT (PO-RALG)</span>
+            </a>
+
+            {{-- 3. Ministry of Community Development --}}
+            <a href="https://www.jamii.go.tz/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center bg-white px-6 py-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 transition-all duration-300">
+                <img src="{{ asset('images/logo-jamii.png') }}" alt="Ministry of Community Development" class="h-20 w-auto object-contain mb-4">
+                <span class="text-slate-800 text-[10px] font-black uppercase tracking-widest text-center">Community Development</span>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+{{-- ============================================================ --}}
+{{-- PWA NON-INTRUSIVE INSTALL PROMPT --}}
 {{-- ============================================================ --}}
 <div x-data="{ 
         show: false, 
@@ -406,7 +440,6 @@
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
-            // Tumeibadili kuwa sessionStorage ili irudi akifunga na kufungua tena browser
             if (!sessionStorage.getItem('hope_pwa_dismissed')) {
                 setTimeout(() => { show = true }, 3000); 
             }
@@ -435,7 +468,6 @@
         </p>
         
         <div class="flex gap-3">
-            {{-- Hapa pia tumebadili kuwa sessionStorage --}}
             <button @click="show = false; sessionStorage.setItem('hope_pwa_dismissed', 'true')" 
                     class="flex-1 px-4 py-2.5 text-[11px] font-black uppercase tracking-widest text-slate-500 hover:text-sky-700 bg-slate-50 hover:bg-slate-100 rounded-lg transition">
                 Not Now

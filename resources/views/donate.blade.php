@@ -190,53 +190,6 @@
 </section>
 
 {{-- ============================================================ --}}
-{{-- PLEDGE / PARTNERSHIP FORM --}}
-{{-- ============================================================ --}}
-<section id="partner" class="py-24 bg-white border-t border-slate-100">
-    <div class="container mx-auto px-4 max-w-3xl">
-        <div class="text-center mb-14">
-            <h2 class="text-3xl font-black text-slate-800 tracking-normal leading-snug">Notify Us of Your Donation or Discuss Partnership</h2>
-            <p class="text-slate-500 mt-4 leading-relaxed">If you have made a transfer, wish to pledge support, or want to discuss a partnership, please leave your details below.</p>
-        </div>
-
-        <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 sm:p-10 space-y-6 shadow-sm">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div class="space-y-2">
-                    <label class="text-[11px] font-black uppercase tracking-widest text-slate-500">First Name</label>
-                    <input type="text" placeholder="Your first name" class="w-full bg-white border border-slate-200 rounded-xl px-5 py-4 text-sm text-slate-700 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all">
-                </div>
-                <div class="space-y-2">
-                    <label class="text-[11px] font-black uppercase tracking-widest text-slate-500">Last Name</label>
-                    <input type="text" placeholder="Your last name" class="w-full bg-white border border-slate-200 rounded-xl px-5 py-4 text-sm text-slate-700 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all">
-                </div>
-            </div>
-            <div class="space-y-2">
-                <label class="text-[11px] font-black uppercase tracking-widest text-slate-500">Email Address / Phone Number</label>
-                <input type="text" placeholder="your@email.com or +255..." class="w-full bg-white border border-slate-200 rounded-xl px-5 py-4 text-sm text-slate-700 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all">
-            </div>
-            <div class="space-y-2">
-                <label class="text-[11px] font-black uppercase tracking-widest text-slate-500">Topic</label>
-                <select class="w-full bg-white border border-slate-200 rounded-xl px-5 py-4 text-sm text-slate-700 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all appearance-none cursor-pointer">
-                    <option value="">Select an option...</option>
-                    {{-- Nimebadilisha option hii ili isitaje Mobile Money tena --}}
-                    <option>I have made a Bank Transfer</option>
-                    <option>I want to Partner with the Foundation</option>
-                    <option>I want to provide in-kind donations (supplies, etc.)</option>
-                    <option>Other inquiries</option>
-                </select>
-            </div>
-            <div class="space-y-2">
-                <label class="text-[11px] font-black uppercase tracking-widest text-slate-500">Message</label>
-                <textarea rows="4" placeholder="Briefly describe how you'd like to help or confirm your donation details..." class="w-full bg-white border border-slate-200 rounded-xl px-5 py-4 text-sm text-slate-700 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-all resize-none"></textarea>
-            </div>
-            <button type="submit" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-black text-[12px] uppercase tracking-widest py-5 rounded-2xl transition duration-300 shadow-lg shadow-slate-900/20 mt-4">
-                Send Message
-            </button>
-        </div>
-    </div>
-</section>
-
-{{-- ============================================================ --}}
 {{-- FINAL CTA --}}
 {{-- ============================================================ --}}
 <section class="py-20 bg-gradient-to-br from-sky-950 to-slate-900 text-white relative overflow-hidden">

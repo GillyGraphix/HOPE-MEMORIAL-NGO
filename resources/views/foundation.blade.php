@@ -346,9 +346,9 @@
 
 
 {{-- ============================================================ --}}
-{{-- LEADERSHIP TEAM --}}
+{{-- LEADERSHIP TEAM (HAPA NDIO ID NA SCROLL-MARGIN ZIMEONGEZWA) --}}
 {{-- ============================================================ --}}
-<section class="py-28 bg-white">
+<section id="leadership-team" class="py-28 bg-white scroll-mt-24">
     <div class="container mx-auto px-4 max-w-7xl">
         <div class="text-center mb-16">
             <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 mb-4">Our Team</p>
@@ -362,7 +362,6 @@
             {{-- ======================== --}}
             <div class="bg-gradient-to-br from-sky-50 to-white border border-sky-100 rounded-3xl p-8 sm:p-10 space-y-6 shadow-sm hover:shadow-md transition-shadow">
                 <div class="flex items-start space-x-5">
-                    {{-- Tumeongeza ?v=1 --}}
                     <img src="{{ asset('images/team/theresia.jpg') }}?v=1" alt="Dr. Theresia Dawas" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0 border border-sky-200 bg-sky-100 shadow-sm">
                     <div>
                         <h3 class="text-2xl font-black text-slate-800 tracking-normal">Dr. Theresia Dawas</h3>
@@ -419,7 +418,6 @@
             {{-- ======================== --}}
             <div class="bg-gradient-to-br from-orange-50 to-white border border-orange-100 rounded-3xl p-8 sm:p-10 space-y-6 shadow-sm hover:shadow-md transition-shadow">
                 <div class="flex items-start space-x-5">
-                    {{-- Tumeongeza ?v=1 --}}
                     <img src="{{ asset('images/team/michael-mahole.jpg') }}?v=1" alt="Dr. Michael Mahole" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0 border border-orange-200 bg-orange-50 shadow-sm">
                     <div>
                         <h3 class="text-2xl font-black text-slate-800 tracking-normal">Dr. Michael Mahole</h3>
@@ -440,7 +438,7 @@
                             At the heart of his work lies action. Dr. Michael is not confined to boardrooms or policy 
                             discussions; he is deeply embedded in the realities of patient care. As a medical officer in-charge 
                             at Hope Memorial Dispensary in the Arusha Region, alongside Dr. Theresia Dawas, he plays a 
-                            pivotal role in delivering accessible, high-quality healthcare to communities that need it most — 
+                            p pivotal role in delivering accessible, high-quality healthcare to communities that need it most — 
                             often turning limited resources into life-saving outcomes.
                         </p>
                         <p class="text-slate-600 leading-relaxed mb-4">
@@ -487,7 +485,6 @@
             {{-- ======================== --}}
             <div class="bg-slate-50 hover:bg-sky-50 border border-slate-100 hover:border-sky-200 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300">
                 <div class="flex items-center space-x-4">
-                    {{-- Tumeongeza ?v=1 --}}
                     <img src="{{ asset('images/team/nehemiah.jpg') }}?v=1" alt="Dr. Nehemiah Mbimbi" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 bg-slate-100 shadow-sm">
                     <div>
                         <h3 class="font-black text-slate-800 text-lg leading-tight">Dr. Nehemiah Mbimbi, MD</h3>
@@ -533,7 +530,6 @@
             {{-- ======================== --}}
             <div class="bg-slate-50 hover:bg-sky-50 border border-slate-100 hover:border-sky-200 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300">
                 <div class="flex items-center space-x-4">
-                    {{-- Tumeongeza ?v=1 --}}
                     <img src="{{ asset('images/team/clement.jpg') }}?v=1" alt="Dr. Clement Marmo" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 bg-slate-100 shadow-sm">
                     <div>
                         <h3 class="font-black text-slate-800 text-lg leading-tight">Dr. Clement Marmo, MD</h3>
@@ -578,7 +574,6 @@
             {{-- ======================== --}}
             <div class="bg-slate-50 hover:bg-sky-50 border border-slate-100 hover:border-sky-200 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300">
                 <div class="flex items-center space-x-4">
-                    {{-- Tumeongeza ?v=1 --}}
                     <img src="{{ asset('images/team/gasper.jpg') }}?v=1" alt="Mr. Gasper Michael" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 bg-slate-100 shadow-sm">
                     <div>
                         <h3 class="font-black text-slate-800 text-lg leading-tight">Mr. Gasper Michael</h3>
@@ -627,7 +622,6 @@
             {{-- ======================== --}}
             <div class="bg-slate-50 hover:bg-sky-50 border border-slate-100 hover:border-sky-200 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300">
                 <div class="flex items-center space-x-4">
-                    {{-- Tumeongeza ?v=1 --}}
                     <img src="{{ asset('images/team/anna.jpg') }}?v=1" alt="Ms. Anna Rahhi" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 bg-slate-100 shadow-sm">
                     <div>
                         <h3 class="font-black text-slate-800 text-lg leading-tight">Ms. Anna Rahhi</h3>
@@ -676,7 +670,6 @@
             {{-- ======================== --}}
             <div class="bg-slate-50 hover:bg-sky-50 border border-slate-100 hover:border-sky-200 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300">
                 <div class="flex items-center space-x-4">
-                    {{-- Tumeongeza ?v=1 --}}
                     <img src="{{ asset('images/team/josephine.jpg') }}?v=1" alt="Ms. Josephine Laizer" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 bg-slate-100 shadow-sm">
                     <div>
                         <h3 class="font-black text-slate-800 text-lg leading-tight">Ms. Josephine Laizer</h3>
@@ -726,7 +719,6 @@
             {{-- ======================== --}}
             <div class="bg-gradient-to-br from-sky-950 to-slate-900 text-white rounded-3xl p-8 space-y-5 shadow-xl">
                 <div class="flex items-center space-x-4">
-                    {{-- Tumeongeza ?v=1 --}}
                     <img src="{{ asset('images/team/kisiaya.jpg') }}?v=1" alt="Mr. Kisiaya Kuju Kipallel" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-white/20 bg-sky-900 shadow-sm">
                     <div>
                         <h3 class="font-black text-white text-lg leading-tight">Mr. Kisiaya Kuju Kipallel</h3>
