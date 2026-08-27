@@ -172,7 +172,7 @@
                                 '/foundation#leadership-team' => 'Our Team'
                             ]
                         ],
-                        'projects' => ['label' => 'Projects'],
+                        'our_work' => ['label' => 'our_work'],
                         'dispensary' => ['label' => 'Clinical'],
                         'gallery' => ['label' => 'Gallery'],
                         'donate' => ['label' => 'Donate'],
@@ -334,10 +334,10 @@
                 <div>
                     <h4 class="text-white font-bold uppercase text-[11px] tracking-[0.2em] mb-8 border-l-4 border-sky-500 pl-4">Focus Areas</h4>
                     <ul class="space-y-4 text-xs font-bold uppercase tracking-[0.15em] text-slate-300">
-                        <li><a href="/projects" class="hover:text-sky-400 transition-colors">Anaemia Reduction</a></li>
-                        <li><a href="/projects" class="hover:text-sky-400 transition-colors">Safe Delivery Initiative</a></li>
-                        <li><a href="/projects" class="hover:text-sky-400 transition-colors">Maternal Education</a></li>
-                        <li><a href="/projects" class="hover:text-sky-400 transition-colors">Community Nutrition</a></li>
+                        <li><a href="/our_work" class="hover:text-sky-400 transition-colors">Anaemia Reduction</a></li>
+                        <li><a href="/our_work" class="hover:text-sky-400 transition-colors">Safe Delivery Initiative</a></li>
+                        <li><a href="/our_work" class="hover:text-sky-400 transition-colors">Maternal Education</a></li>
+                        <li><a href="/our_work" class="hover:text-sky-400 transition-colors">Community Nutrition</a></li>
                     </ul>
                 </div>
 

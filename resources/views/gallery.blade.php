@@ -3,7 +3,7 @@
 @section('content')
 
 {{-- ============================================================ --}}
-{{-- PHP LOGIC: KUSOMA PICHA LIVE (IMEREKEBISHWA KWA AJILI YA cPANEL) --}}
+{{-- PHP LOGIC: KUSOMA PICHA LIVE NA VIMAELEZO (CAPTIONS) --}}
 {{-- ============================================================ --}}
 @php
     $categories = [
@@ -14,15 +14,26 @@
         'team' => 'Team'
     ];
     
+    // HAPA NDIPO UNAPOWEKA MAELEZO YA PICHA ZAKO KULINGANA NA JINA LA FAILi
+    $imageCaptions = [
+        // Mfano: 'jina-la-picha.jpg' => ['title' => 'Kichwa cha Habari', 'desc' => 'Maelezo marefu kidogo...']
+        'mfano-1.jpg' => [
+            'title' => 'Maternal Checkup', 
+            'desc' => 'Our clinical team providing routine checkups to expecting mothers in Monduli.'
+        ],
+        'mfano-2.jpg' => [
+            'title' => 'Community Training', 
+            'desc' => 'Educating local leaders on the importance of early prenatal care.'
+        ],
+        // Unaweza kuongeza picha zako zote hapa chini...
+    ];
+    
     $galleryImages = [];
     
     foreach($categories as $folder => $label) {
         
-        // REKEBISHO MUHIMU KWA cPANEL:
-        // Badala ya public_path(), tunatumia DOCUMENT_ROOT ambayo inaelekeza moja kwa moja kwenye public_html
         $path = rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/images/gallery/' . $folder;
         
-        // Tunaangalia kama njia hii ipo kweli
         if(file_exists($path) && is_dir($path)) {
             try {
                 $dir = new \DirectoryIterator($path);
@@ -30,18 +41,28 @@
                     if (!$fileinfo->isDot() && !$fileinfo->isDir()) {
                         $ext = strtolower($fileinfo->getExtension());
                         if(in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'webp'])) {
+                            
+                            $filename = $fileinfo->getFilename();
+                            
+                            // Tafuta kama hii picha ina maelezo maalum, kama haina tumia maelezo ya kawaida
+                            $captionInfo = $imageCaptions[$filename] ?? [
+                                'title' => $label . ' Moment',
+                                'desc' => 'A snapshot from our ' . strtolower($label) . ' initiatives impacting the community.'
+                            ];
+
                             $galleryImages[] = [
-                                // URL ya picha kwa matumizi ya mtandaoni inabaki kuwa ileile (asset)
-                                'url' => asset('images/gallery/' . $folder . '/' . $fileinfo->getFilename()),
+                                'url' => asset('images/gallery/' . $folder . '/' . $filename),
                                 'category' => $folder,
                                 'label' => $label,
-                                'filename' => $fileinfo->getFilename()
+                                'filename' => $filename,
+                                'title' => $captionInfo['title'],
+                                'desc' => $captionInfo['desc']
                             ];
                         }
                     }
                 }
             } catch (\Exception $e) {
-                // Kama kuna error ya permissions, itadakwa hapa na script haitacrush.
+                // Catch errors silently
             }
         }
     }
@@ -54,15 +75,9 @@
 {{-- PAGE HERO --}}
 {{-- ============================================================ --}}
 <section class="relative bg-sky-950 text-white overflow-hidden flex items-center min-h-[50vh] py-28">
-    
-    {{-- ------------------------------------------------------------ --}}
-    {{-- BACKGROUND IMAGE LAYER (IMPROVED FOR PARALLAX & VS CODE) --}}
-    {{-- ------------------------------------------------------------ --}}
     <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('<?php echo asset('images/gallery-bg.jpg'); ?>');">
-        {{-- Gradient Overlay: Giza kushoto ili maneno yasomeke, uwazi kulia picha ionekane --}}
         <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-sky-950/80 to-transparent"></div>
     </div>
-    {{-- ------------------------------------------------------------ --}}
 
     <div class="absolute inset-0 opacity-10 z-10 pointer-events-none">
         <div class="absolute inset-0" style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>
@@ -84,7 +99,7 @@
 </section>
 
 {{-- ============================================================ --}}
-{{-- GALLERY GRID & FILTERS (MASONRY 4 COLUMNS) --}}
+{{-- GALLERY GRID & FILTERS --}}
 {{-- ============================================================ --}}
 <section class="py-24 bg-slate-50 min-h-[60vh]">
     <div class="container mx-auto px-4 max-w-7xl">
@@ -103,32 +118,33 @@
 
         {{-- Gallery Images Grid --}}
         @if(count($displayImages) > 0)
-            <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4" id="gallery-grid">
+            <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6" id="gallery-grid">
                 @foreach($displayImages as $image)
-                <div class="gallery-item break-inside-avoid relative overflow-hidden rounded-xl cursor-pointer bg-slate-200 shadow-sm hover:shadow-xl transition-all duration-500 transform scale-100 group" 
+                <div class="gallery-item break-inside-avoid relative overflow-hidden rounded-2xl cursor-pointer bg-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 transform group" 
                      data-category="{{ $image['category'] }}"
                      data-url="{{ $image['url'] }}"
                      data-filename="{{ $image['filename'] }}"
                      data-label="{{ $image['label'] }}"
+                     data-title="{{ $image['title'] }}"
+                     data-desc="{{ $image['desc'] }}"
                      onclick="openLightbox(this)">
                     
                     <img src="{{ $image['url'] }}" 
-                         alt="{{ $image['label'] }}" 
-                         class="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700" 
+                         alt="{{ $image['title'] }}" 
+                         class="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700 ease-out" 
                          loading="lazy">
                     
-                    {{-- Hover Overlay --}}
-                    <div class="absolute inset-0 bg-sky-950/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                        <div class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white border border-white/50">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
-                        </div>
+                    {{-- Hover Overlay yenye Kichwa cha Habari --}}
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-sky-300 text-[10px] font-black uppercase tracking-widest mb-1">{{ $image['label'] }}</span>
+                        <h4 class="text-white font-bold text-lg leading-tight translate-y-4 group-hover:translate-y-0 transition-transform duration-300">{{ $image['title'] }}</h4>
                     </div>
                 </div>
                 @endforeach
             </div>
 
         @else
-            {{-- Empty State (Ikikosa picha kwenye mafolda) --}}
+            {{-- Empty State --}}
             <div class="text-center py-20 space-y-6 bg-white rounded-3xl border border-slate-100 shadow-sm">
                 <div class="flex justify-center text-slate-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-24 h-24">
@@ -147,36 +163,34 @@
 </section>
 
 {{-- ============================================================ --}}
-{{-- LIGHTBOX MODAL (Bila Inner Scroll) --}}
+{{-- LIGHTBOX MODAL (Imerekebishwa kuonyesha Maelezo) --}}
 {{-- ============================================================ --}}
-<div id="lightbox" class="fixed inset-0 z-[100] bg-slate-950/95 backdrop-blur-md hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+<div id="lightbox" class="fixed inset-0 z-[100] bg-slate-950/98 backdrop-blur-xl hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 sm:p-8">
     
-    {{-- Close Button (X ya Juu Kulia) --}}
-    <button onclick="closeLightbox()" class="absolute top-4 right-4 md:top-6 md:right-8 text-white/70 hover:text-white transition-colors bg-white/10 hover:bg-white/20 p-2 md:p-3 rounded-full backdrop-blur-md z-50">
-        <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+    <button onclick="closeLightbox()" class="absolute top-4 right-4 md:top-6 md:right-8 text-white/70 hover:text-white transition-colors bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-md z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
     </button>
 
-    {{-- Previous Button --}}
-    <button onclick="prevImage(event)" class="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-black/40 hover:bg-sky-600 p-2 md:p-4 rounded-full backdrop-blur-md transition-all z-50">
-        <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+    <button onclick="prevImage(event)" class="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-white/10 hover:bg-sky-600 p-3 md:p-4 rounded-full backdrop-blur-md transition-all z-50 group">
+        <svg class="w-6 h-6 md:w-8 md:h-8 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
     </button>
 
-    {{-- Next Button --}}
-    <button onclick="nextImage(event)" class="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-black/40 hover:bg-sky-600 p-2 md:p-4 rounded-full backdrop-blur-md transition-all z-50">
-        <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+    <button onclick="nextImage(event)" class="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 text-white/70 hover:text-white bg-white/10 hover:bg-sky-600 p-3 md:p-4 rounded-full backdrop-blur-md transition-all z-50 group">
+        <svg class="w-6 h-6 md:w-8 md:h-8 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
     </button>
 
-    {{-- Container ya Picha na Vitufe --}}
-    <div class="relative w-full h-full flex flex-col items-center justify-center pt-8 md:pt-0">
-        <img id="lightbox-img" src="" alt="Gallery Image" class="max-h-[75vh] w-auto max-w-[90vw] object-contain rounded-lg shadow-2xl shadow-black/50 transition-opacity duration-200">
+    <div class="relative w-full max-w-5xl flex flex-col items-center justify-center pt-8 md:pt-0">
+        <img id="lightbox-img" src="" alt="Gallery Image" class="max-h-[65vh] w-auto max-w-full object-contain rounded-lg shadow-2xl transition-opacity duration-200">
         
-        {{-- Actions Container --}}
-        <div class="mt-6 flex flex-wrap items-center justify-center gap-4 w-full">
-            <span id="lightbox-label" class="text-sky-300 text-[10px] font-black uppercase tracking-widest bg-sky-900/50 border border-sky-800 px-4 py-2.5 rounded-full shadow-inner hidden sm:block"></span>
+        {{-- Sehemu ya Maelezo (Captions) Ndani ya Lightbox --}}
+        <div class="mt-8 text-center max-w-2xl px-4">
+            <span id="lightbox-label" class="text-sky-400 text-[10px] font-black uppercase tracking-[0.2em] mb-2 block"></span>
+            <h3 id="lightbox-title" class="text-2xl font-bold text-white mb-3"></h3>
+            <p id="lightbox-desc" class="text-slate-300 text-sm md:text-base leading-relaxed font-light mb-6"></p>
             
-            <a id="download-btn" href="" download class="flex items-center bg-orange-500 hover:bg-orange-600 text-white font-black text-[11px] uppercase tracking-widest px-6 py-3 rounded-full transition duration-300 shadow-lg shadow-orange-500/20">
+            <a id="download-btn" href="" download class="inline-flex items-center text-sky-400 hover:text-white text-xs uppercase tracking-widest font-bold transition-colors">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-                Download
+                Download Image
             </a>
         </div>
     </div>
@@ -223,6 +237,8 @@
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
         const lightboxLabel = document.getElementById('lightbox-label');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxDesc = document.getElementById('lightbox-desc');
         const downloadBtn = document.getElementById('download-btn');
         
         let currentVisibleItems = [];
@@ -252,6 +268,9 @@
             setTimeout(() => {
                 lightboxImg.src = item.dataset.url;
                 lightboxLabel.textContent = item.dataset.label;
+                lightboxTitle.textContent = item.dataset.title;
+                lightboxDesc.textContent = item.dataset.desc;
+                
                 downloadBtn.href = item.dataset.url;
                 downloadBtn.download = item.dataset.filename;
                 lightboxImg.style.opacity = '1'; 
