@@ -3,7 +3,7 @@
 @section('content')
 
 {{-- ============================================================ --}}
-{{-- PAGE HERO --}}
+{{-- PAGE HERO (Ipo Dark by default, inabaki hivi) --}}
 {{-- ============================================================ --}}
 <section class="relative bg-sky-950 text-white overflow-hidden flex items-center min-h-[50vh] py-28">
     
@@ -39,9 +39,9 @@
 </section>
 
 {{-- ============================================================ --}}
-{{-- NEWS & EVENTS CONTENT --}}
+{{-- NEWS & EVENTS CONTENT (Imeongezwa Dark Mode) --}}
 {{-- ============================================================ --}}
-<section class="py-28 bg-white">
+<section class="py-28 bg-white dark:bg-slate-900 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
         <div class="flex flex-col lg:flex-row gap-12">
             
@@ -50,32 +50,32 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     
                     {{-- News Item 1 --}}
-                    <div class="group bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <div class="group bg-white dark:bg-slate-800 rounded-[2.5rem] overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-500">
                         <div class="relative h-60 overflow-hidden">
                             {{-- Picha ya Habari 1: src="{{ asset('images/news-1.jpg') }}" --}}
                             <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=600" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
                             <span class="absolute top-6 left-6 bg-sky-600 text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Outreach</span>
                         </div>
                         <div class="p-8">
-                            <p class="text-[10px] text-slate-400 font-bold mb-3 uppercase tracking-widest">April 10, 2026</p>
-                            <h3 class="text-xl font-bold text-slate-800 mb-4 group-hover:text-sky-600 transition">Launching Anaemia Awareness in Rural Arusha</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed mb-6">The Spark Foundation officially kicked off its community health education session focused on reducing anaemia among expectant mothers...</p>
-                            <a href="#" class="text-sky-600 font-bold text-sm inline-flex items-center group-hover:translate-x-2 transition">Read Full Story <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
+                            <p class="text-[10px] text-slate-400 dark:text-slate-500 font-bold mb-3 uppercase tracking-widest">April 10, 2026</p>
+                            <h3 class="text-xl font-bold text-slate-800 dark:text-white mb-4 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition">Launching Anaemia Awareness in Rural Arusha</h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-6">The Spark Foundation officially kicked off its community health education session focused on reducing anaemia among expectant mothers...</p>
+                            <a href="#" class="text-sky-600 dark:text-sky-400 font-bold text-sm inline-flex items-center group-hover:translate-x-2 transition">Read Full Story <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
                         </div>
                     </div>
 
                     {{-- News Item 2 --}}
-                    <div class="group bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <div class="group bg-white dark:bg-slate-800 rounded-[2.5rem] overflow-hidden border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-500">
                         <div class="relative h-60 overflow-hidden">
                             {{-- Picha ya Habari 2: src="{{ asset('images/news-2.jpg') }}" --}}
                             <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?q=80&w=600" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
                             <span class="absolute top-6 left-6 bg-orange-500 text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Medical Camp</span>
                         </div>
                         <div class="p-8">
-                            <p class="text-[10px] text-slate-400 font-bold mb-3 uppercase tracking-widest">March 22, 2026</p>
-                            <h3 class="text-xl font-bold text-slate-800 mb-4 group-hover:text-orange-500 transition">Free Antenatal Screening Week Results</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed mb-6">Over 200 mothers were screened at Hope Memorial Dispensary during our successful free medical camp week last month...</p>
-                            <a href="#" class="text-orange-500 font-bold text-sm inline-flex items-center group-hover:translate-x-2 transition">Read Full Story <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
+                            <p class="text-[10px] text-slate-400 dark:text-slate-500 font-bold mb-3 uppercase tracking-widest">March 22, 2026</p>
+                            <h3 class="text-xl font-bold text-slate-800 dark:text-white mb-4 group-hover:text-orange-500 dark:group-hover:text-orange-400 transition">Free Antenatal Screening Week Results</h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-6">Over 200 mothers were screened at Hope Memorial Dispensary during our successful free medical camp week last month...</p>
+                            <a href="#" class="text-orange-500 dark:text-orange-400 font-bold text-sm inline-flex items-center group-hover:translate-x-2 transition">Read Full Story <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
                         </div>
                     </div>
 
@@ -84,13 +84,13 @@
 
             {{-- UPCOMING EVENTS (Right Side Sidebar) --}}
             <div class="lg:w-1/3">
-                <div class="bg-slate-50 rounded-[2.5rem] p-8 lg:p-10 sticky top-28 border border-slate-100">
-                    <h4 class="text-xl font-black text-slate-800 mb-8 uppercase tracking-tight">Upcoming <span class="text-sky-600">Events</span></h4>
+                <div class="bg-slate-50 dark:bg-slate-800/50 rounded-[2.5rem] p-8 lg:p-10 sticky top-28 border border-slate-100 dark:border-slate-700/50 transition-colors duration-300">
+                    <h4 class="text-xl font-black text-slate-800 dark:text-white mb-8 uppercase tracking-tight">Upcoming <span class="text-sky-600 dark:text-sky-400">Events</span></h4>
                     
                     <div class="space-y-6">
                         
                         {{-- Event Item 1 with Image --}}
-                        <div class="group cursor-pointer bg-white rounded-2xl p-3 border border-slate-100 shadow-sm hover:shadow-md transition-all flex gap-4 items-center">
+                        <div class="group cursor-pointer bg-white dark:bg-slate-800 rounded-2xl p-3 border border-slate-100 dark:border-slate-700/50 shadow-sm hover:shadow-md transition-all flex gap-4 items-center">
                             <div class="w-20 h-20 rounded-xl overflow-hidden relative shrink-0">
                                 {{-- Picha ya Tukio 1: src="{{ asset('images/event-1.jpg') }}" --}}
                                 <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=200" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
@@ -100,13 +100,13 @@
                                 </div>
                             </div>
                             <div class="flex-1">
-                                <h5 class="text-sm font-bold text-slate-800 leading-tight mb-2 group-hover:text-sky-600 transition">World Health Day Seminar</h5>
-                                <p class="text-[11px] font-bold text-slate-500 uppercase tracking-widest">📍 Spark Foundation Hall</p>
+                                <h5 class="text-sm font-bold text-slate-800 dark:text-white leading-tight mb-2 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition">World Health Day Seminar</h5>
+                                <p class="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">📍 Spark Foundation Hall</p>
                             </div>
                         </div>
 
                         {{-- Event Item 2 with Image --}}
-                        <div class="group cursor-pointer bg-white rounded-2xl p-3 border border-slate-100 shadow-sm hover:shadow-md transition-all flex gap-4 items-center">
+                        <div class="group cursor-pointer bg-white dark:bg-slate-800 rounded-2xl p-3 border border-slate-100 dark:border-slate-700/50 shadow-sm hover:shadow-md transition-all flex gap-4 items-center">
                             <div class="w-20 h-20 rounded-xl overflow-hidden relative shrink-0">
                                 {{-- Picha ya Tukio 2: src="{{ asset('images/event-2.jpg') }}" --}}
                                 <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=200" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
@@ -116,17 +116,17 @@
                                 </div>
                             </div>
                             <div class="flex-1">
-                                <h5 class="text-sm font-bold text-slate-800 leading-tight mb-2 group-hover:text-orange-500 transition">Maternal Health Outreach</h5>
-                                <p class="text-[11px] font-bold text-slate-500 uppercase tracking-widest">📍 Moshono Community</p>
+                                <h5 class="text-sm font-bold text-slate-800 dark:text-white leading-tight mb-2 group-hover:text-orange-500 dark:group-hover:text-orange-400 transition">Maternal Health Outreach</h5>
+                                <p class="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest">📍 Moshono Community</p>
                             </div>
                         </div>
 
                     </div>
 
                     {{-- ============================================================ --}}
-                    {{-- VOLUNTEER CTA (GOOGLE FORMS IN SIDEBAR) --}}
+                    {{-- VOLUNTEER CTA (GOOGLE FORMS IN SIDEBAR - Ipo Dark by default) --}}
                     {{-- ============================================================ --}}
-                    <div class="mt-10 bg-gradient-to-br from-sky-800 to-sky-950 rounded-3xl p-8 text-white relative overflow-hidden group shadow-lg">
+                    <div class="mt-10 bg-gradient-to-br from-sky-800 to-sky-950 dark:from-sky-900 dark:to-slate-900 rounded-3xl p-8 text-white relative overflow-hidden group shadow-lg border border-transparent dark:border-sky-800/30">
                         
                         {{-- Background Decoration --}}
                         <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/20 rounded-bl-full -z-10 group-hover:bg-sky-500/30 transition-colors duration-500"></div>
@@ -142,7 +142,7 @@
                             <h5 class="font-black text-xl mb-3">Be a Volunteer</h5>
                             <p class="text-xs text-sky-200/90 mb-7 font-light leading-relaxed">Join our team on our next outreach campaign and make a real difference in the community.</p>
                             
-                            {{-- BUTTON YA GOOGLE FORM (IMEREKEBISHWA KUWEKA QUOTES KWENYE HREF) --}}
+                            {{-- BUTTON YA GOOGLE FORM --}}
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEKp_UuyLFG-Ph6otPrip364J7oUPGXHUg78PgJRYv0pG5Mg/viewform?usp=publish-editor" 
                                target="_blank" 
                                rel="noopener noreferrer" 

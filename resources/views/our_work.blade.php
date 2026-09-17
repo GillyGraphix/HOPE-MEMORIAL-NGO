@@ -3,28 +3,23 @@
 @section('content')
 
 {{-- ============================================================ --}}
-{{-- PAGE HERO --}}
+{{-- PAGE HERO (Ipo Dark by default, inabaki hivi) --}}
 {{-- ============================================================ --}}
 <section class="relative bg-sky-950 text-white overflow-hidden flex items-center min-h-[60vh] py-28">
     
     {{-- ------------------------------------------------------------ --}}
-    {{-- BACKGROUND IMAGE LAYER (IMPROVED FOR PARALLAX & VS CODE) --}}
+    {{-- BACKGROUND IMAGE LAYER --}}
     {{-- ------------------------------------------------------------ --}}
     <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('<?php echo asset('images/impact-bg.jpg'); ?>');">
-        {{-- Gradient Overlay: Giza kushoto ili maneno yasomeke, uwazi kulia picha ionekane --}}
         <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-sky-950/80 to-transparent"></div>
     </div>
-    {{-- ------------------------------------------------------------ --}}
-
-    {{-- Background Pattern --}}
+    
     <div class="absolute inset-0 opacity-10 z-10 pointer-events-none">
         <div class="absolute inset-0" style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>
     </div>
     
-    {{-- Glowing Orb --}}
     <div class="absolute bottom-0 left-0 w-96 h-96 bg-sky-500/20 rounded-full blur-3xl pointer-events-none z-10"></div>
     
-    {{-- Content Container --}}
     <div class="container mx-auto px-4 max-w-7xl relative z-20">
         <div class="max-w-3xl">
             <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-400 mb-4 drop-shadow-md">Impact Projects</p>
@@ -43,59 +38,59 @@
 
 
 {{-- ============================================================ --}}
-{{-- PART 1: THE PROBLEM --}}
+{{-- PART 1: THE PROBLEM (Imeongezwa Dark Mode) --}}
 {{-- ============================================================ --}}
-<section class="py-28 bg-white">
+<section class="py-28 bg-white dark:bg-slate-900 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
 
         <div class="flex items-center space-x-5 mb-12">
-            <div class="w-12 h-12 bg-red-50 text-red-500 rounded-2xl flex items-center justify-center shadow-sm border border-red-100">
+            <div class="w-12 h-12 bg-red-50 dark:bg-red-900/30 text-red-500 dark:text-red-400 rounded-2xl flex items-center justify-center shadow-sm border border-red-100 dark:border-red-900/50">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                 </svg>
             </div>
             <div>
-                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-red-500">Section 1</p>
-                <h2 class="text-3xl font-black text-slate-800 tracking-normal">The Problem</h2>
+                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-red-500 dark:text-red-400">Section 1</p>
+                <h2 class="text-3xl font-black text-slate-800 dark:text-white tracking-normal">The Problem</h2>
             </div>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
             <div class="lg:col-span-2 space-y-6">
-                <h3 class="text-2xl sm:text-3xl font-black text-slate-800 tracking-normal leading-snug">
+                <h3 class="text-2xl sm:text-3xl font-black text-slate-800 dark:text-white tracking-normal leading-snug">
                     The Silent Crisis: When Pregnancy Becomes a Risk to Survival
                 </h3>
-                <p class="text-slate-600 text-lg leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
                     In Monduli District, nestled within the vast Rift Valley of northern Tanzania, pregnancy is not 
                     always a moment of anticipation it is often a test of survival.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                     For many women, especially within Maasai pastoralist communities, the journey to motherhood 
                     unfolds far from the safety of skilled medical care. Distances are long. Roads are rough or 
                     nonexistent. Health facilities are few. But the barriers are not only physical. Deeply rooted 
                     cultural norms, limited awareness, and fragile health systems combine to create a reality where 
                     seeking care is delayed or never happens at all.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                     A woman may carry her pregnancy quietly, without a single antenatal visit. She may rely on 
                     traditional practices, guided by beliefs passed down through generations. When labor begins, it 
                     often happens at home, without skilled support, without emergency backup, and without the tools 
                     to respond when something goes wrong.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                     And too often, something does.
                 </p>
             </div>
 
             <div class="space-y-4">
-                <div class="bg-red-50 border border-red-100 rounded-2xl p-7 space-y-4">
-                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-red-500 shadow-sm">
+                <div class="bg-red-50 dark:bg-red-900/20 border border-red-100 dark:border-red-900/30 rounded-2xl p-7 space-y-4">
+                    <div class="w-10 h-10 bg-white dark:bg-red-900/50 rounded-full flex items-center justify-center text-red-500 dark:text-red-400 shadow-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
                         </svg>
                     </div>
-                    <p class="font-black text-slate-800">Barriers to Care</p>
-                    <ul class="space-y-2 text-sm text-slate-600">
+                    <p class="font-black text-slate-800 dark:text-red-200">Barriers to Care</p>
+                    <ul class="space-y-2 text-sm text-slate-600 dark:text-red-100/70">
                         <li class="flex items-start"><span class="text-red-400 mr-2 mt-0.5">•</span>Long distances to facilities</li>
                         <li class="flex items-start"><span class="text-red-400 mr-2 mt-0.5">•</span>Rough or nonexistent roads</li>
                         <li class="flex items-start"><span class="text-red-400 mr-2 mt-0.5">•</span>Deeply rooted cultural norms</li>
@@ -110,7 +105,7 @@
             </div>
         </div>
 
-        {{-- Anaemia Focus --}}
+        {{-- Anaemia Focus (Ipo Dark by default) --}}
         <div class="bg-gradient-to-br from-slate-800 to-sky-950 rounded-3xl p-12 text-white mb-16 shadow-2xl">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
@@ -151,10 +146,10 @@
 
         {{-- The Cycle --}}
         <div class="space-y-8">
-            <h3 class="text-2xl font-black text-slate-800 tracking-normal">How the Cycle Sustains Itself</h3>
+            <h3 class="text-2xl font-black text-slate-800 dark:text-white tracking-normal">How the Cycle Sustains Itself</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 relative">
                 {{-- Decorative connecting line for desktop --}}
-                <div class="hidden lg:block absolute top-1/2 left-0 w-full h-px bg-slate-200 -z-10"></div>
+                <div class="hidden lg:block absolute top-1/2 left-0 w-full h-px bg-slate-200 dark:bg-slate-700 -z-10"></div>
                 
                 @php
                     $cycle = [
@@ -165,17 +160,17 @@
                     ];
                 @endphp
                 @foreach($cycle as $item)
-                <div class="bg-white border border-slate-200 rounded-2xl p-7 space-y-4 shadow-sm hover:shadow-md transition-shadow relative z-10">
-                    <div class="text-4xl font-black text-sky-100 leading-snug">{{ $item['step'] }}</div>
-                    <h4 class="font-black text-slate-800">{{ $item['title'] }}</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed">{{ $item['desc'] }}</p>
+                <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-7 space-y-4 shadow-sm hover:shadow-md transition-shadow relative z-10">
+                    <div class="text-4xl font-black text-sky-100 dark:text-slate-700 leading-snug">{{ $item['step'] }}</div>
+                    <h4 class="font-black text-slate-800 dark:text-white">{{ $item['title'] }}</h4>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">{{ $item['desc'] }}</p>
                 </div>
                 @endforeach
             </div>
 
-            <div class="bg-orange-50 border border-orange-100 rounded-2xl p-8">
-                <p class="text-slate-700 text-lg leading-relaxed">
-                    <strong class="text-orange-600 font-black">This is not simply a medical issue.</strong> It is a system failure reinforced by distance, by silence, and by 
+            <div class="bg-orange-50 dark:bg-orange-900/20 border border-orange-100 dark:border-orange-900/30 rounded-2xl p-8">
+                <p class="text-slate-700 dark:text-orange-100/80 text-lg leading-relaxed">
+                    <strong class="text-orange-600 dark:text-orange-400 font-black">This is not simply a medical issue.</strong> It is a system failure reinforced by distance, by silence, and by 
                     norms that discourage timely care. It is a reality where preventable conditions become life threatening 
                     because the right support does not arrive at the right time. Where knowledge is limited, and options are few. 
                     Where survival often depends on chance.
@@ -207,29 +202,29 @@
 
 
 {{-- ============================================================ --}}
-{{-- PART 2: OUR MISSION --}}
+{{-- PART 2: OUR MISSION (Imeongezwa Dark Mode) --}}
 {{-- ============================================================ --}}
-<section class="py-28 bg-slate-50 border-t border-slate-200">
+<section class="py-28 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
 
         <div class="flex items-center space-x-5 mb-12">
-            <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center border border-sky-200">
+            <div class="w-12 h-12 bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 rounded-2xl flex items-center justify-center border border-sky-200 dark:border-sky-800">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" />
                 </svg>
             </div>
             <div>
-                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-sky-600">Section 2</p>
-                <h2 class="text-3xl font-black text-slate-800 tracking-normal">Our Mission</h2>
+                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-sky-600 dark:text-sky-400">Section 2</p>
+                <h2 class="text-3xl font-black text-slate-800 dark:text-white tracking-normal">Our Mission</h2>
             </div>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
             <div class="space-y-6">
-                <h3 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-normal leading-snug">
+                <h3 class="text-3xl sm:text-4xl font-black text-slate-800 dark:text-white tracking-normal leading-snug">
                     Turning Survival Into a System
                 </h3>
-                <p class="text-slate-600 text-lg leading-relaxed">In Monduli, the problem is not mystery it is predictability.</p>
+                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">In Monduli, the problem is not mystery it is predictability.</p>
                 
                 <div class="space-y-3">
                     @php
@@ -242,13 +237,13 @@
                         ];
                     @endphp
                     @foreach($pattern as $item)
-                    <div class="flex items-center space-x-4 bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
-                        <div class="text-slate-300">
+                    <div class="flex items-center space-x-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-4 shadow-sm">
+                        <div class="text-slate-300 dark:text-slate-500">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
                         </div>
-                        <p class="text-slate-700 font-medium text-sm">{{ $item }}</p>
+                        <p class="text-slate-700 dark:text-slate-300 font-medium text-sm">{{ $item }}</p>
                     </div>
                     @endforeach
                 </div>
@@ -262,20 +257,20 @@
                 </div>
             </div>
 
-            <div class="bg-white border border-slate-200 rounded-3xl p-10 space-y-6 shadow-md">
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-3xl p-10 space-y-6 shadow-md transition-colors duration-300">
                 <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500">Our Solution</p>
-                <h3 class="text-4xl font-black text-slate-800 tracking-normal">SPARK</h3>
-                <p class="text-sky-600 font-black text-sm uppercase tracking-wider">Support for Prenatal and Postnatal Anaemia Resilience Kit</p>
-                <p class="text-slate-600 text-lg leading-relaxed">
+                <h3 class="text-4xl font-black text-slate-800 dark:text-white tracking-normal">SPARK</h3>
+                <p class="text-sky-600 dark:text-sky-400 font-black text-sm uppercase tracking-wider">Support for Prenatal and Postnatal Anaemia Resilience Kit</p>
+                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
                     SPARK becomes more than a tool it becomes a strategy for survival. But a kit alone cannot 
                     solve a systemic problem. What is required is a structured, repeatable model one that works 
                     within the realities of Monduli. One that respects culture while challenging what harms. 
                     One that combines clinical care, community trust, and continuous follow up.
                 </p>
-                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-6 space-y-3">
-                    <p class="text-[11px] font-black uppercase tracking-[0.25em] text-slate-500">The Solution is Built on</p>
-                    <p class="text-3xl font-black text-sky-700">A Rule of 3</p>
-                    <p class="text-slate-600 text-sm">Three connected interventions that close the gaps where mothers are currently being lost.</p>
+                <div class="bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-2xl p-6 space-y-3">
+                    <p class="text-[11px] font-black uppercase tracking-[0.25em] text-slate-500 dark:text-slate-400">The Solution is Built on</p>
+                    <p class="text-3xl font-black text-sky-700 dark:text-sky-400">A Rule of 3</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Three connected interventions that close the gaps where mothers are currently being lost.</p>
                 </div>
             </div>
         </div>
@@ -284,36 +279,36 @@
         {{-- ============================================================ --}}
         {{-- INTERVENTION 1 --}}
         {{-- ============================================================ --}}
-        <div class="bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 mb-10 shadow-sm hover:shadow-md transition-shadow">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-3xl p-8 sm:p-12 mb-10 shadow-sm hover:shadow-md transition-shadow">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 <div class="space-y-6">
                     <div class="flex items-center space-x-4">
-                        <div class="w-16 h-16 bg-sky-600 rounded-2xl flex items-center justify-center text-3xl font-black text-white shadow-lg shadow-sky-200">1</div>
+                        <div class="w-16 h-16 bg-sky-600 rounded-2xl flex items-center justify-center text-3xl font-black text-white shadow-lg shadow-sky-200 dark:shadow-none">1</div>
                         <div>
-                            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-sky-600">Intervention One</p>
-                            <h3 class="text-3xl font-black text-slate-800 tracking-normal">Early Engagement</h3>
+                            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-sky-600 dark:text-sky-400">Intervention One</p>
+                            <h3 class="text-3xl font-black text-slate-800 dark:text-white tracking-normal">Early Engagement</h3>
                         </div>
                     </div>
-                    <p class="text-xl font-bold text-slate-700 border-l-4 border-sky-400 pl-4 py-1">Reach Her Before Risk Begins</p>
-                    <p class="text-slate-600 leading-relaxed">
+                    <p class="text-xl font-bold text-slate-700 dark:text-slate-200 border-l-4 border-sky-400 pl-4 py-1">Reach Her Before Risk Begins</p>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                         The most dangerous moment in maternal anaemia is not when it becomes severe. It is when it is invisible.
                     </p>
-                    <p class="text-slate-600 leading-relaxed">
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                         In Monduli, many women enter the second or third trimester without ever attending antenatal care. 
                         By the time they are seen, anaemia is already advanced, and the window for prevention has narrowed.
                     </p>
-                    <p class="text-slate-600 leading-relaxed">
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                         The first intervention focuses on timing because timing determines survival. This phase ensures 
                         that a woman is reached early in pregnancy, or ideally, the moment pregnancy is suspected.
                     </p>
-                    <p class="text-slate-600 leading-relaxed">
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                         Through targeted community engagement working with women, men, elders, and local influencers
                         the silence around early antenatal care is broken. Pregnancy is no longer hidden until it becomes 
                         obvious; it becomes a moment to act.
                     </p>
                 </div>
                 <div class="space-y-5">
-                    <p class="text-[11px] font-black uppercase tracking-[0.3em] text-sky-600">At This Stage, SPARK Introduces:</p>
+                    <p class="text-[11px] font-black uppercase tracking-[0.3em] text-sky-600 dark:text-sky-400">At This Stage, SPARK Introduces:</p>
                     @php
                         $int1 = [
                             ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />', 'title' => 'Early Antenatal Linkage', 'desc' => 'Connecting women to care in the first trimester.'],
@@ -323,15 +318,15 @@
                         ];
                     @endphp
                     @foreach($int1 as $item)
-                    <div class="flex items-start space-x-4 bg-sky-50 border border-sky-100 rounded-2xl p-5 hover:bg-sky-100 transition-colors">
-                        <div class="text-sky-600 shrink-0">
+                    <div class="flex items-start space-x-4 bg-sky-50 dark:bg-sky-900/20 border border-sky-100 dark:border-sky-900/30 rounded-2xl p-5 hover:bg-sky-100 dark:hover:bg-sky-900/40 transition-colors">
+                        <div class="text-sky-600 dark:text-sky-400 shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 {!! $item['icon'] !!}
                             </svg>
                         </div>
                         <div>
-                            <h4 class="font-black text-slate-800 text-sm">{{ $item['title'] }}</h4>
-                            <p class="text-slate-600 text-sm mt-1">{{ $item['desc'] }}</p>
+                            <h4 class="font-black text-slate-800 dark:text-sky-100 text-sm">{{ $item['title'] }}</h4>
+                            <p class="text-slate-600 dark:text-sky-200/70 text-sm mt-1">{{ $item['desc'] }}</p>
                         </div>
                     </div>
                     @endforeach
@@ -352,33 +347,33 @@
         {{-- ============================================================ --}}
         {{-- INTERVENTION 2 --}}
         {{-- ============================================================ --}}
-        <div class="bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 mb-10 shadow-sm hover:shadow-md transition-shadow">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-3xl p-8 sm:p-12 mb-10 shadow-sm hover:shadow-md transition-shadow">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 <div class="space-y-6">
                     <div class="flex items-center space-x-4">
-                        <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-3xl font-black text-white shadow-lg shadow-orange-200">2</div>
+                        <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-3xl font-black text-white shadow-lg shadow-orange-200 dark:shadow-none">2</div>
                         <div>
-                            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500">Intervention Two</p>
-                            <h3 class="text-3xl font-black text-slate-800 tracking-normal">Continuous Care</h3>
+                            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400">Intervention Two</p>
+                            <h3 class="text-3xl font-black text-slate-800 dark:text-white tracking-normal">Continuous Care</h3>
                         </div>
                     </div>
-                    <p class="text-xl font-bold text-slate-700 border-l-4 border-orange-400 pl-4 py-1">Build Resilience Through Pregnancy</p>
-                    <p class="text-slate-600 leading-relaxed">
+                    <p class="text-xl font-bold text-slate-700 dark:text-slate-200 border-l-4 border-orange-400 pl-4 py-1">Build Resilience Through Pregnancy</p>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                         Starting care is not enough. In many cases, women attend one visit and disappear. Distance, 
                         competing responsibilities, cultural pressures, and lack of follow-up pull them away from the system.
                     </p>
-                    <p class="text-orange-600 font-bold bg-orange-50 inline-block px-3 py-1 rounded">This is where most interventions fail.</p>
-                    <p class="text-slate-600 leading-relaxed">
+                    <p class="text-orange-600 dark:text-orange-400 font-bold bg-orange-50 dark:bg-orange-900/30 inline-block px-3 py-1 rounded">This is where most interventions fail.</p>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                         The second phase focuses on continuity because anaemia is not a one time condition. 
                         It is a process that evolves throughout pregnancy.
                     </p>
-                    <p class="text-slate-600 leading-relaxed">
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                         The SPARK model transforms care from a single encounter into a guided journey. At the center 
                         of this phase is consistent, structured support.
                     </p>
                 </div>
                 <div class="space-y-5">
-                    <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500">Continuous Care Includes:</p>
+                    <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400">Continuous Care Includes:</p>
                     @php
                         $int2 = [
                             ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />', 'title' => 'Ongoing Anaemia Monitoring', 'desc' => 'Tracking haemoglobin levels across pregnancy.'],
@@ -389,15 +384,15 @@
                         ];
                     @endphp
                     @foreach($int2 as $item)
-                    <div class="flex items-start space-x-4 bg-orange-50 border border-orange-100 rounded-2xl p-5 hover:bg-orange-100 transition-colors">
-                        <div class="text-orange-500 shrink-0">
+                    <div class="flex items-start space-x-4 bg-orange-50 dark:bg-orange-900/20 border border-orange-100 dark:border-orange-900/30 rounded-2xl p-5 hover:bg-orange-100 dark:hover:bg-orange-900/40 transition-colors">
+                        <div class="text-orange-500 dark:text-orange-400 shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 {!! $item['icon'] !!}
                             </svg>
                         </div>
                         <div>
-                            <h4 class="font-black text-slate-800 text-sm">{{ $item['title'] }}</h4>
-                            <p class="text-slate-600 text-sm mt-1">{{ $item['desc'] }}</p>
+                            <h4 class="font-black text-slate-800 dark:text-orange-100 text-sm">{{ $item['title'] }}</h4>
+                            <p class="text-slate-600 dark:text-orange-200/70 text-sm mt-1">{{ $item['desc'] }}</p>
                         </div>
                     </div>
                     @endforeach
@@ -416,10 +411,9 @@
 
 
         {{-- ============================================================ --}}
-        {{-- INTERVENTION 3 --}}
+        {{-- INTERVENTION 3 (Ipo Dark by default) --}}
         {{-- ============================================================ --}}
         <div class="bg-gradient-to-br from-sky-950 to-slate-900 text-white rounded-3xl p-8 sm:p-12 mb-16 shadow-2xl relative overflow-hidden">
-            {{-- Decorative pattern --}}
             <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start relative z-10">
@@ -500,69 +494,69 @@
 
 
         {{-- ============================================================ --}}
-        {{-- THE CLOSED LOOP --}}
+        {{-- THE CLOSED LOOP (Imeongezwa Dark Mode) --}}
         {{-- ============================================================ --}}
-        <div class="bg-white border border-slate-200 rounded-3xl p-12 shadow-sm">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-3xl p-12 shadow-sm transition-colors duration-300">
             <div class="text-center mb-12">
                 <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 mb-4">The Core Idea</p>
-                <h3 class="text-3xl sm:text-4xl font-black text-slate-800 tracking-normal">
+                <h3 class="text-3xl sm:text-4xl font-black text-slate-800 dark:text-white tracking-normal">
                     From Fragmented Care to<br>
-                    <span class="text-sky-600">A Continuous System</span>
+                    <span class="text-sky-600 dark:text-sky-400">A Continuous System</span>
                 </h3>
-                <p class="text-slate-600 text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
                     What makes this mission powerful is not any single intervention. It is the connection between them.
                 </p>
             </div>
 
             <div class="flex flex-col lg:flex-row items-center justify-center gap-4 mb-16">
-                <div class="bg-sky-50 border border-sky-100 rounded-2xl p-7 text-center space-y-3 flex-1 w-full shadow-sm">
-                    <div class="w-12 h-12 bg-sky-200 text-sky-700 rounded-full mx-auto flex items-center justify-center">
+                <div class="bg-sky-50 dark:bg-sky-900/20 border border-sky-100 dark:border-sky-900/30 rounded-2xl p-7 text-center space-y-3 flex-1 w-full shadow-sm transition-colors">
+                    <div class="w-12 h-12 bg-sky-200 dark:bg-sky-900/50 text-sky-700 dark:text-sky-300 rounded-full mx-auto flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
                         </svg>
                     </div>
-                    <p class="font-black text-slate-800 text-lg">Early Engagement</p>
-                    <p class="text-slate-600 text-sm">Brings women into care</p>
+                    <p class="font-black text-slate-800 dark:text-sky-100 text-lg">Early Engagement</p>
+                    <p class="text-slate-600 dark:text-sky-200/70 text-sm">Brings women into care</p>
                 </div>
                 
-                <div class="text-slate-300 hidden lg:block">
+                <div class="text-slate-300 dark:text-slate-600 hidden lg:block">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
                 </div>
-                <div class="text-slate-300 lg:hidden py-2">
+                <div class="text-slate-300 dark:text-slate-600 lg:hidden py-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
                 </div>
                 
-                <div class="bg-orange-50 border border-orange-100 rounded-2xl p-7 text-center space-y-3 flex-1 w-full shadow-sm">
-                    <div class="w-12 h-12 bg-orange-200 text-orange-700 rounded-full mx-auto flex items-center justify-center">
+                <div class="bg-orange-50 dark:bg-orange-900/20 border border-orange-100 dark:border-orange-900/30 rounded-2xl p-7 text-center space-y-3 flex-1 w-full shadow-sm transition-colors">
+                    <div class="w-12 h-12 bg-orange-200 dark:bg-orange-900/50 text-orange-700 dark:text-orange-300 rounded-full mx-auto flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                         </svg>
                     </div>
-                    <p class="font-black text-slate-800 text-lg">Continuous Support</p>
-                    <p class="text-slate-600 text-sm">Keeps them protected</p>
+                    <p class="font-black text-slate-800 dark:text-orange-100 text-lg">Continuous Support</p>
+                    <p class="text-slate-600 dark:text-orange-200/70 text-sm">Keeps them protected</p>
                 </div>
                 
-                <div class="text-slate-300 hidden lg:block">
+                <div class="text-slate-300 dark:text-slate-600 hidden lg:block">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
                 </div>
-                <div class="text-slate-300 lg:hidden py-2">
+                <div class="text-slate-300 dark:text-slate-600 lg:hidden py-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
                 </div>
                 
-                <div class="bg-sky-50 border border-sky-100 rounded-2xl p-7 text-center space-y-3 flex-1 w-full shadow-sm">
-                    <div class="w-12 h-12 bg-sky-200 text-sky-700 rounded-full mx-auto flex items-center justify-center">
+                <div class="bg-sky-50 dark:bg-sky-900/20 border border-sky-100 dark:border-sky-900/30 rounded-2xl p-7 text-center space-y-3 flex-1 w-full shadow-sm transition-colors">
+                    <div class="w-12 h-12 bg-sky-200 dark:bg-sky-900/50 text-sky-700 dark:text-sky-300 rounded-full mx-auto flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                         </svg>
                     </div>
-                    <p class="font-black text-slate-800 text-lg">Postnatal Recovery</p>
-                    <p class="text-slate-600 text-sm">Ensures they truly survive</p>
+                    <p class="font-black text-slate-800 dark:text-sky-100 text-lg">Postnatal Recovery</p>
+                    <p class="text-slate-600 dark:text-sky-200/70 text-sm">Ensures they truly survive</p>
                 </div>
                 
-                <div class="text-sky-600 hidden lg:block">
+                <div class="text-sky-600 dark:text-sky-400 hidden lg:block">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
                 </div>
-                <div class="text-sky-600 lg:hidden py-2">
+                <div class="text-sky-600 dark:text-sky-400 lg:hidden py-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
                 </div>
                 
@@ -577,8 +571,8 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 mb-14 bg-slate-50 p-8 rounded-3xl">
-                <p class="text-[11px] font-black uppercase tracking-widest text-slate-500 col-span-full mb-2">This Model Directly Delivers:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 mb-14 bg-slate-50 dark:bg-slate-800 p-8 rounded-3xl transition-colors">
+                <p class="text-[11px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400 col-span-full mb-2">This Model Directly Delivers:</p>
                 @php
                     $objectives = [
                         'Increasing early antenatal attendance',
@@ -591,10 +585,10 @@
                 @endphp
                 @foreach($objectives as $obj)
                 <div class="flex items-center space-x-3">
-                    <div class="w-6 h-6 bg-white border border-sky-200 rounded-full flex items-center justify-center shrink-0 shadow-sm">
-                        <svg class="w-3.5 h-3.5 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                    <div class="w-6 h-6 bg-white dark:bg-slate-700 border border-sky-200 dark:border-sky-900/50 rounded-full flex items-center justify-center shrink-0 shadow-sm">
+                        <svg class="w-3.5 h-3.5 text-sky-500 dark:text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
                     </div>
-                    <p class="text-slate-700 text-sm font-medium">{{ $obj }}</p>
+                    <p class="text-slate-700 dark:text-slate-300 text-sm font-medium">{{ $obj }}</p>
                 </div>
                 @endforeach
             </div>
@@ -622,7 +616,7 @@
             </div>
         </div>
 
-        {{-- End State --}}
+        {{-- End State (Ipo Dark by default) --}}
         <div class="mt-16 bg-gradient-to-br from-orange-500 to-orange-700 rounded-3xl p-12 lg:p-16 text-white text-center shadow-2xl relative overflow-hidden">
             <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
             <div class="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-full blur-3xl"></div>

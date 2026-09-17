@@ -3,7 +3,7 @@
 @section('content')
 
 {{-- ============================================================ --}}
-{{-- PAGE HERO --}}
+{{-- PAGE HERO (Ipo Dark by default, inabaki hivi) --}}
 {{-- ============================================================ --}}
 <section class="relative bg-sky-950 text-white overflow-hidden flex items-center min-h-[60vh] py-28">
     
@@ -55,48 +55,48 @@
 
 
 {{-- ============================================================ --}}
-{{-- ABOUT THE DISPENSARY --}}
+{{-- ABOUT THE DISPENSARY (Imeongezwa Dark Mode) --}}
 {{-- ============================================================ --}}
-<section class="py-28 bg-white">
+<section class="py-28 bg-white dark:bg-slate-900 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
 
             <div class="space-y-6">
-                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 mb-4">Our Frontline Facility</p>
-                <h2 class="text-4xl sm:text-5xl font-black text-slate-800 tracking-normal leading-snug">
+                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400 mb-4">Our Frontline Facility</p>
+                <h2 class="text-4xl sm:text-5xl font-black text-slate-800 dark:text-white tracking-normal leading-snug">
                     Integrated Healthcare<br>
-                    <span class="text-sky-600">for Real Impact</span>
+                    <span class="text-sky-600 dark:text-sky-400">for Real Impact</span>
                 </h2>
-                <p class="text-slate-600 text-lg leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
                     Through Hope Memorial Dispensary, the Foundation delivers essential primary healthcare 
                     services including outpatient clinical care for acute and chronic conditions, maternal and 
                     child health services focused on safe pregnancy, safe delivery, and healthy growth.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                     The dispensary also provides diagnostic services that support early detection and accurate 
                     treatment, and preventive care that reduces avoidable illness and complications.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
-                    Every service is designed with <strong class="text-slate-800">dignity, accessibility, and quality</strong> in 
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Every service is designed with <strong class="text-slate-800 dark:text-slate-200">dignity, accessibility, and quality</strong> in 
                     mind ensuring that even the most vulnerable populations receive timely and effective care.
                 </p>
-                <div class="bg-sky-50 border border-sky-100 rounded-3xl p-8 space-y-4 shadow-sm mt-8">
-                    <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 mb-2">Medical Officers In-Charge</p>
+                <div class="bg-sky-50 dark:bg-sky-900/20 border border-sky-100 dark:border-sky-900/30 rounded-3xl p-8 space-y-4 shadow-sm mt-8 transition-colors">
+                    <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 dark:text-sky-400 mb-2">Medical Officers In-Charge</p>
                     <div class="flex items-center space-x-4">
-                        <div class="bg-sky-200 text-sky-700 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                        <div class="bg-sky-200 dark:bg-sky-900/50 text-sky-700 dark:text-sky-300 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                             </svg>
                         </div>
-                        <p class="font-black text-slate-800 text-sm sm:text-base">Dr. Theresia Dawas (Founder & Exec. Director)</p>
+                        <p class="font-black text-slate-800 dark:text-white text-sm sm:text-base">Dr. Theresia Dawas (Founder & Exec. Director)</p>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <div class="bg-sky-200 text-sky-700 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                        <div class="bg-sky-200 dark:bg-sky-900/50 text-sky-700 dark:text-sky-300 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                             </svg>
                         </div>
-                        <p class="font-black text-slate-800 text-sm sm:text-base">Dr. Michael Mahole (Founder & Co-Director)</p>
+                        <p class="font-black text-slate-800 dark:text-white text-sm sm:text-base">Dr. Michael Mahole (Founder & Co-Director)</p>
                     </div>
                 </div>
             </div>
@@ -111,15 +111,15 @@
                     ];
                 @endphp
                 @foreach($services as $service)
-                <div class="flex items-start space-x-5 bg-white hover:bg-{{ $service['color'] }}-50 border border-slate-200 hover:border-{{ $service['color'] }}-200 rounded-3xl p-7 transition-all duration-300 shadow-sm">
-                    <div class="text-{{ $service['color'] }}-500 shrink-0 mt-1">
+                <div class="flex items-start space-x-5 bg-white dark:bg-slate-900 hover:bg-{{ $service['color'] }}-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 hover:border-{{ $service['color'] }}-200 dark:hover:border-{{ $service['color'] }}-500/50 rounded-3xl p-7 transition-all duration-300 shadow-sm">
+                    <div class="text-{{ $service['color'] }}-500 dark:text-{{ $service['color'] }}-400 shrink-0 mt-1">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                             {!! $service['icon'] !!}
                         </svg>
                     </div>
                     <div>
-                        <h3 class="font-black text-slate-800 mb-2">{{ $service['title'] }}</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">{{ $service['desc'] }}</p>
+                        <h3 class="font-black text-slate-800 dark:text-white mb-2">{{ $service['title'] }}</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">{{ $service['desc'] }}</p>
                     </div>
                 </div>
                 @endforeach
@@ -130,43 +130,43 @@
 
 
 {{-- ============================================================ --}}
-{{-- SPARK AT THE DISPENSARY --}}
+{{-- SPARK AT THE DISPENSARY (Imeongezwa Dark Mode) --}}
 {{-- ============================================================ --}}
-<section class="py-20 bg-slate-50 border-t border-slate-200">
+<section class="py-20 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div class="lg:col-span-1 space-y-6">
-                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500">Flagship Program</p>
-                <h2 class="text-3xl font-black text-slate-800 tracking-normal leading-snug">
+                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400">Flagship Program</p>
+                <h2 class="text-3xl font-black text-slate-800 dark:text-white tracking-normal leading-snug">
                     SPARK Delivered<br>Through the Dispensary
                 </h2>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                     Our flagship initiative, the SPARK Support for Prenatal and Postnatal Anaemia 
                     Resilience Kit, is implemented through this integrated system.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                     SPARK combines health education, nutritional support, anaemia prevention tools, and 
                     follow up care to improve maternal outcomes and strengthen community resilience.
                 </p>
-                <a href="/projects" class="inline-flex items-center text-sky-600 font-black text-[12px] uppercase tracking-widest hover:text-sky-800 transition group mt-4">
+                <a href="/projects" class="inline-flex items-center text-sky-600 dark:text-sky-400 font-black text-[12px] uppercase tracking-widest hover:text-sky-800 dark:hover:text-sky-300 transition group mt-4">
                     Learn About SPARK
                     <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                 </a>
             </div>
             <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div class="bg-sky-600 rounded-3xl p-8 text-white space-y-4 shadow-lg">
+                <div class="bg-sky-600 dark:bg-sky-700 rounded-3xl p-8 text-white space-y-4 shadow-lg transition-colors">
                     <div class="text-4xl font-black text-sky-200 opacity-50">01</div>
                     <p class="text-[10px] font-black uppercase tracking-widest text-sky-300">Delivered Here</p>
                     <h3 class="font-black text-xl leading-snug">Early Anaemia Screening</h3>
                     <p class="text-sky-100 text-sm leading-relaxed">Identifying anaemia before it becomes dangerous connecting women to care in the first trimester.</p>
                 </div>
-                <div class="bg-orange-500 rounded-3xl p-8 text-white space-y-4 shadow-lg">
+                <div class="bg-orange-500 dark:bg-orange-600 rounded-3xl p-8 text-white space-y-4 shadow-lg transition-colors">
                     <div class="text-4xl font-black text-orange-200 opacity-50">02</div>
                     <p class="text-[10px] font-black uppercase tracking-widest text-orange-200">Delivered Here</p>
                     <h3 class="font-black text-xl leading-snug">Antenatal & Postnatal Care</h3>
                     <p class="text-orange-100 text-sm leading-relaxed">Continuous support through pregnancy and into recovery after delivery.</p>
                 </div>
-                <div class="bg-sky-800 rounded-3xl p-8 text-white space-y-4 shadow-lg">
+                <div class="bg-sky-800 dark:bg-sky-900 rounded-3xl p-8 text-white space-y-4 shadow-lg transition-colors">
                     <div class="text-4xl font-black text-sky-400 opacity-50">03</div>
                     <p class="text-[10px] font-black uppercase tracking-widest text-sky-400">Delivered Here</p>
                     <h3 class="font-black text-xl leading-snug">Nutrition Counseling & Referrals</h3>
@@ -179,16 +179,16 @@
 
 
 {{-- ============================================================ --}}
-{{-- OUTPATIENT CLINIC --}}
+{{-- OUTPATIENT CLINIC (Imeongezwa Dark Mode) --}}
 {{-- ============================================================ --}}
-<section class="py-28 bg-white">
+<section class="py-28 bg-white dark:bg-slate-900 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
         <div class="text-center mb-16">
-            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 mb-4">Outpatient Services</p>
-            <h2 class="text-4xl sm:text-5xl font-black text-slate-800 tracking-normal leading-snug">
+            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400 mb-4">Outpatient Services</p>
+            <h2 class="text-4xl sm:text-5xl font-black text-slate-800 dark:text-white tracking-normal leading-snug">
                 The Outpatient Clinic
             </h2>
-            <p class="text-slate-500 mt-6 max-w-2xl mx-auto text-lg leading-relaxed font-light">
+            <p class="text-slate-500 dark:text-slate-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed font-light">
                 The outpatient clinic is the heartbeat of Hope Memorial Dispensary a place where 
                 quality care meets community trust, and where no patient is turned away due to distance or circumstance.
             </p>
@@ -206,14 +206,14 @@
                 ];
             @endphp
             @foreach($clinicServices as $srv)
-            <div class="bg-slate-50 hover:bg-white border border-slate-200 hover:border-{{ $srv['color'] }}-200 rounded-3xl p-8 space-y-4 shadow-sm hover:shadow-md transition-all duration-300">
-                <div class="text-{{ $srv['color'] }}-500">
+            <div class="bg-slate-50 dark:bg-slate-800 hover:bg-white dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 hover:border-{{ $srv['color'] }}-200 dark:hover:border-{{ $srv['color'] }}-500/50 rounded-3xl p-8 space-y-4 shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="text-{{ $srv['color'] }}-500 dark:text-{{ $srv['color'] }}-400">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                         {!! $srv['icon'] !!}
                     </svg>
                 </div>
-                <h3 class="font-black text-slate-800 text-lg leading-tight">{{ $srv['title'] }}</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">{{ $srv['desc'] }}</p>
+                <h3 class="font-black text-slate-800 dark:text-white text-lg leading-tight">{{ $srv['title'] }}</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">{{ $srv['desc'] }}</p>
             </div>
             @endforeach
         </div>
@@ -272,23 +272,23 @@
 
 
 {{-- ============================================================ --}}
-{{-- COMMUNITY OUTREACH --}}
+{{-- COMMUNITY OUTREACH (Imeongezwa Dark Mode) --}}
 {{-- ============================================================ --}}
-<section class="py-28 bg-slate-50 border-t border-slate-200">
+<section class="py-28 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
 
             <div class="space-y-6">
-                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500">Community Programs</p>
-                <h2 class="text-4xl font-black text-slate-800 tracking-normal leading-snug">
+                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400">Community Programs</p>
+                <h2 class="text-4xl font-black text-slate-800 dark:text-white tracking-normal leading-snug">
                     Reaching Beyond<br>
-                    <span class="text-sky-600">the Facility</span>
+                    <span class="text-sky-600 dark:text-sky-400">the Facility</span>
                 </h2>
-                <p class="text-slate-600 text-lg leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
                     Healthcare does not stop at the clinic doors. Through community outreach programs, the 
                     Foundation extends its services directly to underserved and remote communities.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                     Mobile clinics, health education campaigns, and screening initiatives bring lifesaving care 
                     closer to the people who need it most. These efforts are especially focused on maternal health, 
                     child survival, and disease prevention at the community level.
@@ -303,15 +303,15 @@
                         ];
                     @endphp
                     @foreach($outreach as $item)
-                    <div class="flex items-start space-x-5 bg-white border border-slate-200 rounded-3xl p-6 hover:border-{{ $item['color'] }}-200 hover:shadow-md transition-all duration-300">
-                        <div class="text-{{ $item['color'] }}-500 shrink-0 mt-1">
+                    <div class="flex items-start space-x-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 hover:border-{{ $item['color'] }}-200 dark:hover:border-{{ $item['color'] }}-500/50 hover:shadow-md transition-all duration-300">
+                        <div class="text-{{ $item['color'] }}-500 dark:text-{{ $item['color'] }}-400 shrink-0 mt-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 {!! $item['icon'] !!}
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-black text-slate-800 text-sm">{{ $item['title'] }}</h3>
-                            <p class="text-slate-500 text-sm mt-1 leading-relaxed">{{ $item['desc'] }}</p>
+                            <h3 class="font-black text-slate-800 dark:text-white text-sm">{{ $item['title'] }}</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1 leading-relaxed">{{ $item['desc'] }}</p>
                         </div>
                     </div>
                     @endforeach
@@ -319,18 +319,18 @@
             </div>
 
             <div class="space-y-6">
-                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500">Capacity Building</p>
-                <h2 class="text-4xl font-black text-slate-800 tracking-normal leading-snug">
+                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400">Capacity Building</p>
+                <h2 class="text-4xl font-black text-slate-800 dark:text-white tracking-normal leading-snug">
                     Building Sustainable<br>
-                    <span class="text-sky-600">Health Systems</span>
+                    <span class="text-sky-600 dark:text-sky-400">Health Systems</span>
                 </h2>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                     Hope Memorial Spark Foundation is also committed to strengthening the future of healthcare 
                     through education and capacity building. We train community health workers, support 
                     continuous professional development, and equip frontline workers with the skills needed to 
                     improve health outcomes across generations.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                     By investing in people, we ensure that impact is not only immediate but sustainable.
                 </p>
 
@@ -366,7 +366,7 @@
 
 
 {{-- ============================================================ --}}
-{{-- 10-YEAR STRATEGIC PLAN (Clinical Focus) --}}
+{{-- 10-YEAR STRATEGIC PLAN (Clinical Focus - Ipo Dark by default) --}}
 {{-- ============================================================ --}}
 <section class="py-28 bg-sky-950 text-white relative overflow-hidden">
     <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
@@ -410,15 +410,15 @@
 
 
 {{-- ============================================================ --}}
-{{-- CTA --}}
+{{-- CTA (Imeongezwa Dark Mode Gradation) --}}
 {{-- ============================================================ --}}
-<section class="py-24 bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-inner">
+<section class="py-24 bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-600 dark:to-orange-800 text-white shadow-inner transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-4xl text-center">
         <h2 class="text-4xl font-black tracking-normal mb-6">Partner With Our Clinical Team</h2>
         <p class="text-orange-50 mb-10 leading-relaxed text-lg font-light drop-shadow-sm">Whether you're a healthcare professional, an organization, or a donor there is a role for you in strengthening frontline maternal healthcare in Tanzania.</p>
         <div class="flex flex-col sm:flex-row gap-5 justify-center">
-            <a href="/contact" class="bg-white text-orange-600 font-black text-[12px] uppercase tracking-widest px-10 py-4 rounded-full hover:bg-orange-50 transition shadow-lg shadow-orange-700/30">Get In Touch</a>
-            <a href="/donate" class="border border-white/50 bg-white/10 backdrop-blur-sm hover:border-white text-white font-black text-[12px] uppercase tracking-widest px-10 py-4 rounded-full transition shadow-lg shadow-orange-700/30">Support The Dispensary</a>
+            <a href="/contact" class="bg-white text-orange-600 font-black text-[12px] uppercase tracking-widest px-10 py-4 rounded-full hover:bg-orange-50 transition shadow-lg shadow-orange-700/30 dark:shadow-none">Get In Touch</a>
+            <a href="/donate" class="border border-white/50 bg-white/10 backdrop-blur-sm hover:border-white text-white font-black text-[12px] uppercase tracking-widest px-10 py-4 rounded-full transition shadow-lg shadow-orange-700/30 dark:shadow-none">Support The Dispensary</a>
         </div>
     </div>
 </section>

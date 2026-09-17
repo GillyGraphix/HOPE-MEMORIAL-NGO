@@ -35,7 +35,7 @@
 </style>
 
 {{-- ============================================================ --}}
-{{-- PAGE HERO --}}
+{{-- PAGE HERO (Ipo Dark by default, inabaki hivi) --}}
 {{-- ============================================================ --}}
 <section class="relative bg-sky-950 text-white overflow-hidden flex items-center min-h-[60vh] py-28">
     
@@ -72,33 +72,33 @@
 
 
 {{-- ============================================================ --}}
-{{-- ABOUT US --}}
+{{-- ABOUT US (Imeongezwa Dark Mode) --}}
 {{-- ============================================================ --}}
-<section class="py-28 bg-white">
+<section class="py-28 bg-white dark:bg-slate-900 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
 
             <div class="space-y-6">
-                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500">About Us</p>
-                <h2 class="text-4xl sm:text-5xl font-black text-slate-800 tracking-normal leading-snug">
-                    Hope Memorial<br><span class="text-sky-600">Spark Foundation</span>
+                <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400">About Us</p>
+                <h2 class="text-4xl sm:text-5xl font-black text-slate-800 dark:text-white tracking-normal leading-snug">
+                    Hope Memorial<br><span class="text-sky-600 dark:text-sky-400">Spark Foundation</span>
                 </h2>
-                <p class="text-slate-600 text-lg leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
                     Hope Memorial Spark Foundation (HMSF) is a non-profit organization dedicated to 
                     improving maternal, newborn, and child health, with a strong focus on the prevention and 
                     management of anaemia during pregnancy and the postnatal period.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
                     The foundation exists to reduce preventable maternal and infant complications through early 
                     detection, community education, nutritional support, and integrated primary healthcare interventions.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
-                    HMSF was officially registered on <strong class="text-slate-800">26 February 2026</strong> under the 
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    HMSF was officially registered on <strong class="text-slate-800 dark:text-slate-200">26 February 2026</strong> under the 
                     Tanzania Non-Governmental Organizations Act, 2002, with Registration Number: 
-                    <strong class="text-slate-800">01NGO/R/3988</strong>.
+                    <strong class="text-slate-800 dark:text-slate-200">01NGO/R/3988</strong>.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
-                    The organization is situated in the heart of <strong class="text-slate-800">Mto wa Mbu, near Lake Manyara National Park</strong>, 
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    The organization is situated in the heart of <strong class="text-slate-800 dark:text-slate-200">Mto wa Mbu, near Lake Manyara National Park</strong>, 
                     serving as a strategic gateway to the Ngorongoro wildlife corridor. This location allows us 
                     to directly serve rural and semi urban communities where access to maternal healthcare services 
                     remains limited.
@@ -107,7 +107,7 @@
 
             <div class="space-y-6">
                 {{-- Dispensary Card --}}
-                <div class="bg-sky-600 rounded-3xl p-10 text-white space-y-4 shadow-lg shadow-sky-600/20">
+                <div class="bg-sky-600 dark:bg-sky-900 rounded-3xl p-10 text-white space-y-4 shadow-lg shadow-sky-600/20 dark:shadow-none transition-colors">
                     <div class="text-white bg-white/20 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
@@ -127,10 +127,10 @@
                 </div>
 
                 {{-- SPARK Card --}}
-                <div class="bg-orange-50 border border-orange-100 rounded-3xl p-8 space-y-3 shadow-sm hover:shadow-md transition-shadow">
-                    <p class="text-[11px] font-black uppercase tracking-[0.2em] text-orange-500">Our Flagship Initiative</p>
-                    <h3 class="text-xl font-black text-slate-800">SPARK — Support for Prenatal and Postnatal Anaemia Resilience Kit</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
+                <div class="bg-orange-50 dark:bg-orange-900/20 border border-orange-100 dark:border-orange-900/30 rounded-3xl p-8 space-y-3 shadow-sm hover:shadow-md transition-shadow">
+                    <p class="text-[11px] font-black uppercase tracking-[0.2em] text-orange-500 dark:text-orange-400">Our Flagship Initiative</p>
+                    <h3 class="text-xl font-black text-slate-800 dark:text-orange-100">SPARK — Support for Prenatal and Postnatal Anaemia Resilience Kit</h3>
+                    <p class="text-slate-600 dark:text-orange-200/70 text-sm leading-relaxed">
                         Implemented through our integrated system, SPARK combines health education, nutritional support, 
                         anaemia prevention tools, and follow-up care to improve maternal outcomes and strengthen community resilience.
                     </p>
@@ -142,13 +142,13 @@
 
 
 {{-- ============================================================ --}}
-{{-- CORE FOCUS AREAS --}}
+{{-- CORE FOCUS AREAS (Imeongezwa Dark Mode) --}}
 {{-- ============================================================ --}}
-<section class="py-20 bg-slate-50 border-t border-slate-200">
+<section class="py-20 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
         <div class="text-center mb-14">
-            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 mb-3">What We Do</p>
-            <h2 class="text-4xl font-black text-slate-800 tracking-normal">Core Focus Areas</h2>
+            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400 mb-3">What We Do</p>
+            <h2 class="text-4xl font-black text-slate-800 dark:text-white tracking-normal">Core Focus Areas</h2>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             @php
@@ -162,13 +162,13 @@
                 ];
             @endphp
             @foreach($areas as $area)
-            <div class="bg-white border border-slate-100 rounded-2xl p-7 flex items-start space-x-5 hover:border-{{ $area['color'] }}-200 hover:shadow-lg transition-all duration-300">
-                <div class="text-{{ $area['color'] }}-500 shrink-0 mt-1">
+            <div class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-7 flex items-start space-x-5 hover:border-{{ $area['color'] }}-200 dark:hover:border-{{ $area['color'] }}-500/50 hover:shadow-lg transition-all duration-300">
+                <div class="text-{{ $area['color'] }}-500 dark:text-{{ $area['color'] }}-400 shrink-0 mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                         {!! $area['icon'] !!}
                     </svg>
                 </div>
-                <p class="font-bold text-slate-700 text-sm leading-relaxed">{{ $area['title'] }}</p>
+                <p class="font-bold text-slate-700 dark:text-slate-300 text-sm leading-relaxed">{{ $area['title'] }}</p>
             </div>
             @endforeach
         </div>
@@ -177,17 +177,17 @@
 
 
 {{-- ============================================================ --}}
-{{-- INTEGRATED HEALTHCARE --}}
+{{-- INTEGRATED HEALTHCARE (Imeongezwa Dark Mode) --}}
 {{-- ============================================================ --}}
-<section class="py-28 bg-white">
+<section class="py-28 bg-white dark:bg-slate-900 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
 
         <div class="text-center mb-16">
-            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 mb-4">Clinical Services</p>
-            <h2 class="text-4xl sm:text-5xl font-black text-slate-800 tracking-normal leading-snug">
-                Integrated Healthcare<br><span class="text-sky-600">for Real Impact</span>
+            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400 mb-4">Clinical Services</p>
+            <h2 class="text-4xl sm:text-5xl font-black text-slate-800 dark:text-white tracking-normal leading-snug">
+                Integrated Healthcare<br><span class="text-sky-600 dark:text-sky-400">for Real Impact</span>
             </h2>
-            <p class="text-slate-500 mt-6 max-w-2xl mx-auto text-lg leading-relaxed font-light">
+            <p class="text-slate-500 dark:text-slate-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed font-light">
                 Through Hope Memorial Dispensary, the Foundation delivers essential primary healthcare 
                 services. Every service is designed with dignity, accessibility, and quality in mind.
             </p>
@@ -203,20 +203,20 @@
                 ];
             @endphp
             @foreach($services as $service)
-            <div class="bg-slate-50 rounded-2xl p-8 text-center space-y-4 hover:bg-white hover:border hover:border-slate-200 border border-transparent shadow-sm hover:shadow-md transition-all duration-300">
-                <div class="text-{{ $service['color'] }}-500 flex justify-center mb-2">
+            <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 text-center space-y-4 hover:bg-white dark:hover:bg-slate-700 hover:border hover:border-slate-200 dark:hover:border-slate-600 border border-transparent shadow-sm hover:shadow-md transition-all duration-300">
+                <div class="text-{{ $service['color'] }}-500 dark:text-{{ $service['color'] }}-400 flex justify-center mb-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
                         {!! $service['icon'] !!}
                     </svg>
                 </div>
-                <h3 class="font-black text-slate-800 text-sm uppercase tracking-tight">{{ $service['title'] }}</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">{{ $service['desc'] }}</p>
+                <h3 class="font-black text-slate-800 dark:text-white text-sm uppercase tracking-tight">{{ $service['title'] }}</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">{{ $service['desc'] }}</p>
             </div>
             @endforeach
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div class="bg-gradient-to-br from-sky-600 to-sky-800 rounded-3xl p-10 text-white space-y-5 shadow-lg">
+            <div class="bg-gradient-to-br from-sky-600 to-sky-800 dark:from-sky-800 dark:to-sky-950 rounded-3xl p-10 text-white space-y-5 shadow-lg transition-colors">
                 <div class="text-white/80">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
@@ -234,7 +234,7 @@
                     at the community level.
                 </p>
             </div>
-            <div class="bg-gradient-to-br from-orange-500 to-orange-600 rounded-3xl p-10 text-white space-y-5 shadow-lg">
+            <div class="bg-gradient-to-br from-orange-500 to-orange-600 dark:from-orange-700 dark:to-orange-900 rounded-3xl p-10 text-white space-y-5 shadow-lg transition-colors">
                 <div class="text-white/80">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
@@ -257,7 +257,7 @@
 
 
 {{-- ============================================================ --}}
-{{-- 10 YEAR VISION --}}
+{{-- 10 YEAR VISION (Ipo Dark by default, inabaki) --}}
 {{-- ============================================================ --}}
 <section class="py-28 bg-sky-950 text-white relative overflow-hidden">
     {{-- Decorative pattern --}}
@@ -327,9 +327,9 @@
 
 
 {{-- ============================================================ --}}
-{{-- COMMITMENT --}}
+{{-- COMMITMENT (Gradient nzuri, inabaki hivi) --}}
 {{-- ============================================================ --}}
-<section class="py-20 bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-inner">
+<section class="py-20 bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-600 dark:to-orange-800 text-white shadow-inner transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-5xl text-center">
         <h2 class="text-4xl sm:text-5xl font-black tracking-normal mb-6">Our Commitment</h2>
         <p class="text-orange-50 text-xl leading-relaxed font-light mb-8 drop-shadow-sm">
@@ -348,11 +348,11 @@
 {{-- ============================================================ --}}
 {{-- LEADERSHIP TEAM (HAPA NDIO ID NA SCROLL-MARGIN ZIMEONGEZWA) --}}
 {{-- ============================================================ --}}
-<section id="leadership-team" class="py-28 bg-white scroll-mt-24">
+<section id="leadership-team" class="py-28 bg-white dark:bg-slate-900 scroll-mt-24 transition-colors duration-300">
     <div class="container mx-auto px-4 max-w-7xl">
         <div class="text-center mb-16">
-            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 mb-4">Our Team</p>
-            <h2 class="text-4xl sm:text-5xl font-black text-slate-800 tracking-normal">Our Leadership</h2>
+            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400 mb-4">Our Team</p>
+            <h2 class="text-4xl sm:text-5xl font-black text-slate-800 dark:text-white tracking-normal">Our Leadership</h2>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-24">
@@ -360,51 +360,51 @@
             {{-- ======================== --}}
             {{-- Dr. Theresia Dawas --}}
             {{-- ======================== --}}
-            <div class="bg-gradient-to-br from-sky-50 to-white border border-sky-100 rounded-3xl p-8 sm:p-10 space-y-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="bg-gradient-to-br from-sky-50 to-white dark:from-slate-800 dark:to-slate-900 border border-sky-100 dark:border-slate-700 rounded-3xl p-8 sm:p-10 space-y-6 shadow-sm hover:shadow-md transition-all duration-300">
                 <div class="flex items-start space-x-5">
-                    <img src="{{ asset('images/team/theresia.jpg') }}?v=1" alt="Dr. Theresia Dawas" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0 border border-sky-200 bg-sky-100 shadow-sm">
+                    <img src="{{ asset('images/team/theresia.jpg') }}?v=1" alt="Dr. Theresia Dawas" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0 border border-sky-200 dark:border-slate-600 bg-sky-100 dark:bg-slate-700 shadow-sm">
                     <div>
-                        <h3 class="text-2xl font-black text-slate-800 tracking-normal">Dr. Theresia Dawas</h3>
-                        <p class="text-[11px] font-black uppercase tracking-widest text-orange-500 mt-1">Founder & Executive Director</p>
+                        <h3 class="text-2xl font-black text-slate-800 dark:text-white tracking-normal">Dr. Theresia Dawas</h3>
+                        <p class="text-[11px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-400 mt-1">Founder & Executive Director</p>
                     </div>
                 </div>
 
                 <div class="relative">
                     <div class="bio-content collapsed" id="bio-theresia">
-                        <div class="bio-fade bg-gradient-to-t from-white to-transparent"></div>
-                        <p class="text-slate-600 leading-relaxed mb-4">
+                        <div class="bio-fade bg-gradient-to-t from-white dark:from-slate-900 to-transparent transition-colors duration-300"></div>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
                             Dr. Theresia Dawas is a dynamic Tanzanian clinician, visionary leader, and social impact 
                             champion dedicated to transforming maternal and community health. She is the Founder and 
                             Executive Director of Hope Memorial Spark Foundation, and the driving force behind Hope 
                             Memorial Dispensary, a frontline healthcare facility serving vulnerable communities with 
                             compassion and quality care in Arusha region.
                         </p>
-                        <p class="text-slate-600 leading-relaxed mb-4">
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
                             With a deep commitment to saving lives and restoring dignity, Dr. Theresia has positioned her 
                             work at the intersection of clinical excellence and community empowerment. Through both the 
-                            foundation and the dispensary, she leads innovative, community-centered interventions tackling 
+                            foundation and the dispensary, she leads innovative, community centered interventions tackling 
                             critical issues such as maternal anaemia, preventable pregnancy complications, and limited 
                             access to essential healthcare services.
                         </p>
-                        <p class="text-slate-600 leading-relaxed mb-4">
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
                             Her leadership goes beyond treatment it is about transformation. At Hope Memorial 
                             Dispensary, she ensures that underserved populations receive timely, affordable, and life-saving 
                             care. Through Hope Memorial Spark Foundation, she scales this impact by designing sustainable 
                             programs, mobilizing communities, and building partnerships that create lasting change.
                         </p>
-                        <p class="text-slate-600 leading-relaxed mb-4">
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
                             Known for her bold vision and compassionate approach, Dr. Dawas bridges the gap between 
                             healthcare systems and the people who need them most. She believes that no woman should risk 
                             her life to give life, and her work continues to turn that belief into reality.
                         </p>
-                        <div class="bg-sky-600 rounded-2xl p-6 shadow-sm mt-6">
+                        <div class="bg-sky-600 dark:bg-sky-900 rounded-2xl p-6 shadow-sm mt-6 transition-colors">
                             <p class="text-white text-base font-bold italic">"No woman should risk her life to give life."</p>
                             <p class="text-sky-200 text-[10px] mt-2 font-black uppercase tracking-widest">Dr. Theresia is not just a healthcare provider — she is a changemaker, a community builder, and a powerful voice for equity in health.</p>
                         </div>
                     </div>
                     <button
                         onclick="toggleBio('bio-theresia', this)"
-                        class="mt-4 inline-flex items-center gap-1.5 text-sky-600 hover:text-sky-800 font-black text-[12px] uppercase tracking-widest transition-colors duration-200 bg-sky-50 px-4 py-2 rounded-full border border-sky-100"
+                        class="mt-4 inline-flex items-center gap-1.5 text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-300 font-black text-[12px] uppercase tracking-widest transition-colors duration-200 bg-sky-50 dark:bg-sky-900/30 px-4 py-2 rounded-full border border-sky-100 dark:border-sky-800"
                     >
                         <span class="btn-label">Read more...</span>
                         <svg class="btn-icon w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
@@ -416,50 +416,50 @@
             {{-- ======================== --}}
             {{-- Dr. Michael Mahole --}}
             {{-- ======================== --}}
-            <div class="bg-gradient-to-br from-orange-50 to-white border border-orange-100 rounded-3xl p-8 sm:p-10 space-y-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="bg-gradient-to-br from-orange-50 to-white dark:from-slate-800 dark:to-slate-900 border border-orange-100 dark:border-slate-700 rounded-3xl p-8 sm:p-10 space-y-6 shadow-sm hover:shadow-md transition-all duration-300">
                 <div class="flex items-start space-x-5">
-                    <img src="{{ asset('images/team/michael-mahole.jpg') }}?v=1" alt="Dr. Michael Mahole" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0 border border-orange-200 bg-orange-50 shadow-sm">
+                    <img src="{{ asset('images/team/michael-mahole.jpg') }}?v=1" alt="Dr. Michael Mahole" class="w-24 h-24 sm:w-32 sm:h-32 rounded-xl object-cover shrink-0 border border-orange-200 dark:border-slate-600 bg-orange-50 dark:bg-slate-700 shadow-sm">
                     <div>
-                        <h3 class="text-2xl font-black text-slate-800 tracking-normal">Dr. Michael Mahole</h3>
-                        <p class="text-[11px] font-black uppercase tracking-widest text-orange-500 mt-1">Founder & Co-Director</p>
+                        <h3 class="text-2xl font-black text-slate-800 dark:text-white tracking-normal">Dr. Michael Mahole</h3>
+                        <p class="text-[11px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-400 mt-1">Founder & Co-Director</p>
                     </div>
                 </div>
 
                 <div class="relative">
                     <div class="bio-content collapsed" id="bio-michael">
-                        <div class="bio-fade bg-gradient-to-t from-white to-transparent"></div>
-                        <p class="text-slate-600 leading-relaxed mb-4">
-                            Dr. Michael Mahole is a Tanzanian clinician, bold changemaker, and results-driven leader 
+                        <div class="bio-fade bg-gradient-to-t from-white dark:from-slate-900 to-transparent transition-colors duration-300"></div>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                            Dr. Michael Mahole is a Tanzanian clinician, bold changemaker, and results driven leader 
                             redefining frontline healthcare delivery in underserved communities. As the Founder and Co-Director 
                             of Hope Memorial Spark Foundation, he combines sharp clinical expertise with strategic vision 
                             to build solutions that are not only impactful but sustainable.
                         </p>
-                        <p class="text-slate-600 leading-relaxed mb-4">
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
                             At the heart of his work lies action. Dr. Michael is not confined to boardrooms or policy 
-                            discussions; he is deeply embedded in the realities of patient care. As a medical officer in-charge 
+                            discussions; he is deeply embedded in the realities of patient care. As a medical officer incharge 
                             at Hope Memorial Dispensary in the Arusha Region, alongside Dr. Theresia Dawas, he plays a 
-                            p pivotal role in delivering accessible, high-quality healthcare to communities that need it most — 
+                            pivotal role in delivering accessible, high quality healthcare to communities that need it most 
                             often turning limited resources into life-saving outcomes.
                         </p>
-                        <p class="text-slate-600 leading-relaxed mb-4">
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
                             Known for his precision, discipline, and forward thinking mindset, Dr. Michael has a unique 
                             ability to translate complex health challenges into practical, scalable interventions. His work 
                             spans clinical care, program design, and operational leadership ensuring that every initiative 
                             under the foundation is grounded in real impact, not just intention.
                         </p>
-                        <p class="text-slate-600 leading-relaxed mb-4">
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
                             He is particularly driven by the urgent need to close healthcare gaps in maternal and community 
                             health, believing that innovation, efficiency, and community trust are the pillars of lasting 
                             change. His leadership style is defined by quiet determination, resilience under pressure, and an 
                             unshakable commitment to excellence.
                         </p>
-                        <div class="bg-orange-500 rounded-2xl p-6 shadow-sm mt-6">
+                        <div class="bg-orange-500 dark:bg-orange-700 rounded-2xl p-6 shadow-sm mt-6 transition-colors">
                             <p class="text-white text-[11px] font-black uppercase tracking-[0.2em] leading-relaxed">Dr. Michael represents a new generation of African health leaders those who do not wait for change, but build it.</p>
                         </div>
                     </div>
                     <button
                         onclick="toggleBio('bio-michael', this)"
-                        class="mt-4 inline-flex items-center gap-1.5 text-orange-500 hover:text-orange-600 font-black text-[12px] uppercase tracking-widest transition-colors duration-200 bg-orange-50 px-4 py-2 rounded-full border border-orange-100"
+                        class="mt-4 inline-flex items-center gap-1.5 text-orange-500 dark:text-orange-400 hover:text-orange-600 dark:hover:text-orange-300 font-black text-[12px] uppercase tracking-widest transition-colors duration-200 bg-orange-50 dark:bg-orange-900/30 px-4 py-2 rounded-full border border-orange-100 dark:border-orange-800"
                     >
                         <span class="btn-label">Read more...</span>
                         <svg class="btn-icon w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
@@ -473,9 +473,9 @@
         {{-- ============================================================ --}}
         {{-- BOARD MEMBERS --}}
         {{-- ============================================================ --}}
-        <div class="text-center mb-14 border-t border-slate-200 pt-20">
-            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 mb-4">Governance</p>
-            <h2 class="text-4xl font-black text-slate-800 tracking-normal">Our Board</h2>
+        <div class="text-center mb-14 border-t border-slate-200 dark:border-slate-800 pt-20 transition-colors">
+            <p class="text-[11px] font-black uppercase tracking-[0.3em] text-orange-500 dark:text-orange-400 mb-4">Governance</p>
+            <h2 class="text-4xl font-black text-slate-800 dark:text-white tracking-normal">Our Board</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -483,20 +483,20 @@
             {{-- ======================== --}}
             {{-- Dr. Nehemiah Mbimbi --}}
             {{-- ======================== --}}
-            <div class="bg-slate-50 hover:bg-sky-50 border border-slate-100 hover:border-sky-200 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="bg-slate-50 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 border border-slate-100 dark:border-slate-700 hover:border-sky-200 dark:hover:border-sky-500/50 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300 group">
                 <div class="flex items-center space-x-4">
-                    <img src="{{ asset('images/team/nehemiah.jpg') }}?v=1" alt="Dr. Nehemiah Mbimbi" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 bg-slate-100 shadow-sm">
+                    <img src="{{ asset('images/team/nehemiah.jpg') }}?v=1" alt="Dr. Nehemiah Mbimbi" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 dark:border-slate-600 bg-slate-100 dark:bg-slate-700 shadow-sm">
                     <div>
-                        <h3 class="font-black text-slate-800 text-lg leading-tight">Dr. Nehemiah Mbimbi, MD</h3>
-                        <p class="text-[10px] font-black uppercase tracking-widest text-orange-500 mt-1">Board Member</p>
+                        <h3 class="font-black text-slate-800 dark:text-white text-lg leading-tight">Dr. Nehemiah Mbimbi, MD</h3>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-400 mt-1">Board Member</p>
                     </div>
                 </div>
-                <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 bg-sky-100/50 inline-block px-3 py-1 rounded border border-sky-100">Spec: Obstetrics & Gynaecology</p>
+                <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 dark:text-sky-400 bg-sky-100/50 dark:bg-sky-900/30 inline-block px-3 py-1 rounded border border-sky-100 dark:border-sky-800 transition-colors">Spec: Obstetrics & Gynaecology</p>
 
                 <div class="relative">
                     <div class="bio-content collapsed" id="bio-nehemiah">
-                        <div class="bio-fade bg-gradient-to-t from-slate-50 to-transparent group-hover:from-sky-50"></div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                        <div class="bio-fade bg-gradient-to-t from-slate-50 dark:from-slate-800 group-hover:from-sky-50 dark:group-hover:from-slate-700 to-transparent transition-colors duration-300"></div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3">
                             A seasoned Tanzanian medical doctor with extensive expertise in Obstetrics and Gynaecology. 
                             With years of hands on practice at Mto wa Mbu Health Center in Arusha region, Dr. Mbimbi has 
                             built a strong reputation for managing complex obstetric cases, supporting safe deliveries, and 
@@ -504,7 +504,7 @@
                             technical mastery and compassionate care, earning the trust of both patients and colleagues 
                             in one of Tanzania's most diverse and dynamic communities.
                         </p>
-                        <p class="text-slate-600 text-sm leading-relaxed">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                             Beyond the clinical setting, he plays a critical advisory role within the foundation, where his 
                             experience directly informs program design, maternal health protocols, and quality of care standards. 
                             He brings a grounded, real world perspective that strengthens decision making and ensures 
@@ -516,7 +516,7 @@
                     </div>
                     <button
                         onclick="toggleBio('bio-nehemiah', this)"
-                        class="mt-4 inline-flex items-center gap-1.5 text-sky-600 hover:text-sky-800 font-black text-[11px] uppercase tracking-widest transition-colors duration-200"
+                        class="mt-4 inline-flex items-center gap-1.5 text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-300 font-black text-[11px] uppercase tracking-widest transition-colors duration-200"
                     >
                         <span class="btn-label">Read more...</span>
                         <svg class="btn-icon w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
@@ -528,27 +528,27 @@
             {{-- ======================== --}}
             {{-- Dr. Clement Marmo --}}
             {{-- ======================== --}}
-            <div class="bg-slate-50 hover:bg-sky-50 border border-slate-100 hover:border-sky-200 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="bg-slate-50 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 border border-slate-100 dark:border-slate-700 hover:border-sky-200 dark:hover:border-sky-500/50 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300 group">
                 <div class="flex items-center space-x-4">
-                    <img src="{{ asset('images/team/clement.jpg') }}?v=1" alt="Dr. Clement Marmo" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 bg-slate-100 shadow-sm">
+                    <img src="{{ asset('images/team/clement.jpg') }}?v=1" alt="Dr. Clement Marmo" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 dark:border-slate-600 bg-slate-100 dark:bg-slate-700 shadow-sm">
                     <div>
-                        <h3 class="font-black text-slate-800 text-lg leading-tight">Dr. Clement Marmo, MD</h3>
-                        <p class="text-[10px] font-black uppercase tracking-widest text-orange-500 mt-1">Board Member</p>
+                        <h3 class="font-black text-slate-800 dark:text-white text-lg leading-tight">Dr. Clement Marmo, MD</h3>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-400 mt-1">Board Member</p>
                     </div>
                 </div>
-                <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 bg-sky-100/50 inline-block px-3 py-1 rounded border border-sky-100">Spec: Obstetrics & Gynaecology</p>
+                <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 dark:text-sky-400 bg-sky-100/50 dark:bg-sky-900/30 inline-block px-3 py-1 rounded border border-sky-100 dark:border-sky-800 transition-colors">Spec: Obstetrics & Gynaecology</p>
 
                 <div class="relative">
                     <div class="bio-content collapsed" id="bio-clement">
-                        <div class="bio-fade bg-gradient-to-t from-slate-50 to-transparent group-hover:from-sky-50"></div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                        <div class="bio-fade bg-gradient-to-t from-slate-50 dark:from-slate-800 group-hover:from-sky-50 dark:group-hover:from-slate-700 to-transparent transition-colors duration-300"></div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3">
                             A distinguished Tanzanian medical doctor with a strong background in Obstetrics and Gynaecology. 
                             With extensive experience in managing both routine and high risk obstetric cases, Dr. Marmo has 
                             earned a reputation for precision, sound clinical judgment, and calm decision making in critical 
                             momments. His work reflects a deep understanding of women's health across all stages of life, 
                             particularly in settings where timely intervention can mean the difference between life and loss.
                         </p>
-                        <p class="text-slate-600 text-sm leading-relaxed">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                             Beyond the hospital setting, he plays a vital governance role within the foundation, contributing 
                             to policy direction, quality assurance, and the continuous improvement of maternal health services. 
                             His input is rooted in years of frontline experience, ensuring that strategies remain clinically 
@@ -560,7 +560,7 @@
                     </div>
                     <button
                         onclick="toggleBio('bio-clement', this)"
-                        class="mt-4 inline-flex items-center gap-1.5 text-sky-600 hover:text-sky-800 font-black text-[11px] uppercase tracking-widest transition-colors duration-200"
+                        class="mt-4 inline-flex items-center gap-1.5 text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-300 font-black text-[11px] uppercase tracking-widest transition-colors duration-200"
                     >
                         <span class="btn-label">Read more...</span>
                         <svg class="btn-icon w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
@@ -572,33 +572,33 @@
             {{-- ======================== --}}
             {{-- Mr. Gasper Michael --}}
             {{-- ======================== --}}
-            <div class="bg-slate-50 hover:bg-sky-50 border border-slate-100 hover:border-sky-200 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="bg-slate-50 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 border border-slate-100 dark:border-slate-700 hover:border-sky-200 dark:hover:border-sky-500/50 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300 group">
                 <div class="flex items-center space-x-4">
-                    <img src="{{ asset('images/team/gasper.jpg') }}?v=1" alt="Mr. Gasper Michael" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 bg-slate-100 shadow-sm">
+                    <img src="{{ asset('images/team/gasper.jpg') }}?v=1" alt="Mr. Gasper Michael" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 dark:border-slate-600 bg-slate-100 dark:bg-slate-700 shadow-sm">
                     <div>
-                        <h3 class="font-black text-slate-800 text-lg leading-tight">Mr. Gasper Michael</h3>
-                        <p class="text-[10px] font-black uppercase tracking-widest text-orange-500 mt-1">Board Member</p>
+                        <h3 class="font-black text-slate-800 dark:text-white text-lg leading-tight">Mr. Gasper Michael</h3>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-400 mt-1">Board Member</p>
                     </div>
                 </div>
-                <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 bg-sky-100/50 inline-block px-3 py-1 rounded border border-sky-100">Role: Financial Gov. & Strategy</p>
+                <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 dark:text-sky-400 bg-sky-100/50 dark:bg-sky-900/30 inline-block px-3 py-1 rounded border border-sky-100 dark:border-sky-800 transition-colors">Role: Financial Gov. & Strategy</p>
 
                 <div class="relative">
                     <div class="bio-content collapsed" id="bio-gasper">
-                        <div class="bio-fade bg-gradient-to-t from-slate-50 to-transparent group-hover:from-sky-50"></div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                        <div class="bio-fade bg-gradient-to-t from-slate-50 dark:from-slate-800 group-hover:from-sky-50 dark:group-hover:from-slate-700 to-transparent transition-colors duration-300"></div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3">
                             A highly accomplished Tanzanian accounting professional who plays a pivotal role in strengthening 
                             financial governance, transparency, and strategic resource management within the foundation.
                             With a strong academic and professional foundation in accountancy, Mr. Gasper has built a 
                             reputation for precision, integrity, and analytical excellence developing advanced expertise in 
                             financial reporting, auditing, budgeting, and compliance systems.
                         </p>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3">
                             His leadership style blends technical mastery with ethical responsibility, making him a cornerstone 
                             in safeguarding the foundation's financial health. Within the foundation, Mr. Gasper brings a 
                             disciplined and visionary approach to financial stewardship ensuring that every resource is 
                             accounted for with accountability and purpose, enabling programs to run efficiently and sustainably.
                         </p>
-                        <p class="text-slate-600 text-sm leading-relaxed">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                             Beyond numbers, Mr. Gasper is driven by a deep commitment to community impact believing that 
                             sound financial management is about unlocking opportunities for life changing initiatives in 
                             maternal health, community empowerment, and sustainable development. Respected for his 
@@ -608,7 +608,7 @@
                     </div>
                     <button
                         onclick="toggleBio('bio-gasper', this)"
-                        class="mt-4 inline-flex items-center gap-1.5 text-orange-500 hover:text-orange-700 font-black text-[11px] uppercase tracking-widest transition-colors duration-200"
+                        class="mt-4 inline-flex items-center gap-1.5 text-orange-500 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-black text-[11px] uppercase tracking-widest transition-colors duration-200"
                     >
                         <span class="btn-label">Read more...</span>
                         <svg class="btn-icon w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
@@ -620,33 +620,33 @@
             {{-- ======================== --}}
             {{-- Ms. Anna Rahhi --}}
             {{-- ======================== --}}
-            <div class="bg-slate-50 hover:bg-sky-50 border border-slate-100 hover:border-sky-200 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="bg-slate-50 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 border border-slate-100 dark:border-slate-700 hover:border-sky-200 dark:hover:border-sky-500/50 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300 group">
                 <div class="flex items-center space-x-4">
-                    <img src="{{ asset('images/team/anna.jpg') }}?v=1" alt="Ms. Anna Rahhi" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 bg-slate-100 shadow-sm">
+                    <img src="{{ asset('images/team/anna.jpg') }}?v=1" alt="Ms. Anna Rahhi" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 dark:border-slate-600 bg-slate-100 dark:bg-slate-700 shadow-sm">
                     <div>
-                        <h3 class="font-black text-slate-800 text-lg leading-tight">Ms. Anna Rahhi</h3>
-                        <p class="text-[10px] font-black uppercase tracking-widest text-orange-500 mt-1">Board Member & Logistics</p>
+                        <h3 class="font-black text-slate-800 dark:text-white text-lg leading-tight">Ms. Anna Rahhi</h3>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-400 mt-1">Board Member & Logistics</p>
                     </div>
                 </div>
-                <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 bg-sky-100/50 inline-block px-3 py-1 rounded border border-sky-100">Also Serves: Karatu District Council</p>
+                <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 dark:text-sky-400 bg-sky-100/50 dark:bg-sky-900/30 inline-block px-3 py-1 rounded border border-sky-100 dark:border-sky-800 transition-colors">Also Serves: Karatu District Council</p>
 
                 <div class="relative">
                     <div class="bio-content collapsed" id="bio-anna">
-                        <div class="bio-fade bg-gradient-to-t from-slate-50 to-transparent group-hover:from-sky-50"></div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                        <div class="bio-fade bg-gradient-to-t from-slate-50 dark:from-slate-800 group-hover:from-sky-50 dark:group-hover:from-slate-700 to-transparent transition-colors duration-300"></div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3">
                             A dedicated Tanzanian professional who plays a vital role in ensuring smooth operational flow, 
                             efficient coordination, and timely delivery of essential health and community programs. 
                             With her strong background in public service and logistics management, Ms. Anna also serves at 
                             the Karatu District Council, where she has gained extensive hands-on experience in planning, 
                             coordination, and management of public resources within local government systems.
                         </p>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3">
                             In her role within the foundation, Ms. Anna is the backbone of operational execution
                             overseeing supply chains, coordinating field activities, and ensuring that every program reaches 
                             intended communities without delay. Her sharp attention to detail and ability to anticipate 
                             logistical challenges make her an invaluable force behind successful outreach initiatives.
                         </p>
-                        <p class="text-slate-600 text-sm leading-relaxed">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                             What distinguishes Ms. Anna is her calm leadership under pressure and her deep commitment to 
                             community impact believing that effective logistics is about ensuring dignity, access, and equity 
                             for underserved populations, especially women and children in rural communities. Respected for her 
@@ -656,7 +656,7 @@
                     </div>
                     <button
                         onclick="toggleBio('bio-anna', this)"
-                        class="mt-4 inline-flex items-center gap-1.5 text-sky-600 hover:text-sky-800 font-black text-[11px] uppercase tracking-widest transition-colors duration-200"
+                        class="mt-4 inline-flex items-center gap-1.5 text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-300 font-black text-[11px] uppercase tracking-widest transition-colors duration-200"
                     >
                         <span class="btn-label">Read more...</span>
                         <svg class="btn-icon w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
@@ -668,20 +668,20 @@
             {{-- ======================== --}}
             {{-- Ms. Josephine Laizer --}}
             {{-- ======================== --}}
-            <div class="bg-slate-50 hover:bg-sky-50 border border-slate-100 hover:border-sky-200 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300">
+            <div class="bg-slate-50 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 border border-slate-100 dark:border-slate-700 hover:border-sky-200 dark:hover:border-sky-500/50 rounded-3xl p-8 space-y-5 shadow-sm hover:shadow-md transition-all duration-300 group">
                 <div class="flex items-center space-x-4">
-                    <img src="{{ asset('images/team/josephine.jpg') }}?v=1" alt="Ms. Josephine Laizer" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 bg-slate-100 shadow-sm">
+                    <img src="{{ asset('images/team/josephine.jpg') }}?v=1" alt="Ms. Josephine Laizer" class="w-24 h-24 rounded-xl object-cover shrink-0 border border-slate-200 dark:border-slate-600 bg-slate-100 dark:bg-slate-700 shadow-sm">
                     <div>
-                        <h3 class="font-black text-slate-800 text-lg leading-tight">Ms. Josephine Laizer</h3>
-                        <p class="text-[10px] font-black uppercase tracking-widest text-orange-500 mt-1">Board Member</p>
+                        <h3 class="font-black text-slate-800 dark:text-white text-lg leading-tight">Ms. Josephine Laizer</h3>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-orange-500 dark:text-orange-400 mt-1">Board Member</p>
                     </div>
                 </div>
-                <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 bg-sky-100/50 inline-block px-3 py-1 rounded border border-sky-100">Also Serves: Monduli District Council</p>
+                <p class="text-[11px] font-black uppercase tracking-widest text-sky-600 dark:text-sky-400 bg-sky-100/50 dark:bg-sky-900/30 inline-block px-3 py-1 rounded border border-sky-100 dark:border-sky-800 transition-colors">Also Serves: Monduli District Council</p>
 
                 <div class="relative">
                     <div class="bio-content collapsed" id="bio-josephine">
-                        <div class="bio-fade bg-gradient-to-t from-slate-50 to-transparent group-hover:from-sky-50"></div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                        <div class="bio-fade bg-gradient-to-t from-slate-50 dark:from-slate-800 group-hover:from-sky-50 dark:group-hover:from-slate-700 to-transparent transition-colors duration-300"></div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3">
                             A committed Tanzanian public servant who contributes her expertise in community development, 
                             governance, and social impact strategy. Serving at the Monduli District Council, Ms. Josephine 
                             has built a strong professional reputation rooted in dedication to local development and responsive 
@@ -689,14 +689,14 @@
                             rural communities, particularly in maternal health, access to essential services, and grassroots 
                             development systems.
                         </p>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3">
                             Within the foundation, she brings a grounded and practical perspective that bridges policy 
                             understanding with community realities. She plays a key role in guiding programs that are 
                             culturally sensitive, community driven, and aligned with sustainable development goals. Her 
                             ability to listen, analyze, and translate community needs into actionable strategies makes her 
                             an essential voice in shaping impactful interventions.
                         </p>
-                        <p class="text-slate-600 text-sm leading-relaxed">
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                             Ms. Josephine strongly believes that meaningful change begins at the local level, where every 
                             decision can directly transform lives. Through her dual role in local government and the 
                             foundation, she ensures that community voices are not only heard but actively reflected in 
@@ -705,7 +705,7 @@
                     </div>
                     <button
                         onclick="toggleBio('bio-josephine', this)"
-                        class="mt-4 inline-flex items-center gap-1.5 text-orange-500 hover:text-orange-700 font-black text-[11px] uppercase tracking-widest transition-colors duration-200"
+                        class="mt-4 inline-flex items-center gap-1.5 text-orange-500 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-black text-[11px] uppercase tracking-widest transition-colors duration-200"
                     >
                         <span class="btn-label">Read more...</span>
                         <svg class="btn-icon w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
@@ -715,7 +715,7 @@
 
 
             {{-- ======================== --}}
-            {{-- Mr. Kisiaya Kuju Kipallel --}}
+            {{-- Mr. Kisiaya Kuju Kipallel (Ipo Dark Default) --}}
             {{-- ======================== --}}
             <div class="bg-gradient-to-br from-sky-950 to-slate-900 text-white rounded-3xl p-8 space-y-5 shadow-xl">
                 <div class="flex items-center space-x-4">
@@ -735,7 +735,7 @@
                             the timeless wisdom of indigenous leadership into modern community development and humanitarian work.
                             Deeply rooted in Maasai heritage, Mr. Kisiaya is widely recognized as a custodian of peace, 
                             unity, and cultural identity. As a Laigwanani, he has long served his community as a trusted 
-                            mediator and decision-maker, guiding resolutions on land use, grazing disputes, family 
+                            mediator and decision maker, guiding resolutions on land use, grazing disputes, family 
                             disagreements, and community conflicts. His authority is grounded not in force, but in respect, 
                             wisdom, and the enduring strength of traditional Maasai laws and the elders' council system.
                         </p>
