@@ -29,7 +29,7 @@
                 The System.
             </h1>
             <p class="text-sky-100 text-xl font-light leading-relaxed drop-shadow-md">
-                Understanding the silent crisis of maternal anaemia in Monduli District — and the structured 
+                Understanding the silent crisis of maternal anaemia in Monduli District and the structured 
                 SPARK system designed to end it.
             </p>
         </div>
